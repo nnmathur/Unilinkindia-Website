@@ -1,0 +1,40 @@
+[10-Dec-2019 01:52:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ForgotPasswordController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ForgotPasswordController.php on line 8
+[10-Dec-2019 01:52:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ResetPasswordController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ResetPasswordController.php on line 8
+[10-Dec-2019 01:52:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/LoginController.php on line 8
+[10-Dec-2019 01:52:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/RegisterController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/RegisterController.php on line 11
+[10-Dec-2019 01:52:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/VerificationController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/VerificationController.php on line 8
+[10-Dec-2019 07:23:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ForgotPasswordController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ForgotPasswordController.php on line 8
+[10-Dec-2019 07:23:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/RegisterController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/RegisterController.php on line 11
+[10-Dec-2019 07:23:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/VerificationController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/VerificationController.php on line 8
+[10-Dec-2019 07:23:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ResetPasswordController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/ResetPasswordController.php on line 8
+[10-Dec-2019 07:23:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/LoginController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Http/Controllers/Auth/LoginController.php on line 8

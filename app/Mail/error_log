@@ -1,0 +1,8 @@
+[29-Nov-2019 17:31:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Mail\Mailable' not found in /home/unilinki/public_html/csrability/app/Mail/MailNotify.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Mail/MailNotify.php on line 9
+[10-Dec-2019 11:54:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Mail\Mailable' not found in /home/unilinki/public_html/csrability/app/Mail/MailNotify.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/csrability/app/Mail/MailNotify.php on line 9

@@ -1,0 +1,44 @@
+[09-Oct-2021 21:26:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/services.php on line 18
+[09-Oct-2021 21:28:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/mail.php on line 19
+[22-Oct-2021 22:48:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/app.php on line 16
+[24-Oct-2021 17:54:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/services.php on line 18
+[24-Oct-2021 17:56:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/mail.php on line 19
+[24-Oct-2021 18:09:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/filesystems.php on line 16
+[24-Oct-2021 18:11:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/app.php on line 16
+[27-Oct-2021 13:06:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/services.php on line 18
+[27-Oct-2021 13:06:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/mail.php on line 19
+[27-Oct-2021 13:10:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/filesystems.php on line 16
+[27-Oct-2021 13:11:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/unilinki/public_html/thesafetypoint.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/unilinki/public_html/thesafetypoint.com/config/app.php on line 16

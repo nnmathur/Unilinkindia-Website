@@ -1,0 +1,178 @@
+.get-popup
+{
+	position:absolute;
+	top:-10px;
+	right:0;
+	z-index:2;
+}
+.get-popup ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  top:1px;
+  cursor:pointer;
+}
+
+.get-popup li {
+  float: left;          
+}
+
+.get-popup .login-trigger,
+.get-popup .signup a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+.get-popup .signup a {
+  border-radius: 0 3px 3px 0;
+}
+
+.get-popup .login-trigger:hover,
+.get-popup .signup a:hover {
+  background: #fff;
+}
+
+.get-popup .login-content {
+  display: none;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  z-index: 999;
+  background-color:#fff;
+  font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;  
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border:1px solid #fafafa;
+}
+
+
+span.getin-arrow
+{
+	border-bottom:10px solid #fafafa;
+	border-top:10px solid transparent;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	position:absolute;
+	top:-20px;
+	right:10%;
+}
+
+.get-popup li .login-content {
+  right: 0;
+  width: 550px;
+  cursor:auto;
+}
+
+.login-content h1 {
+	background-color:#fff;
+	padding:9px 15px 5px 15px;
+	margin:0px;
+	text-transform:none;
+	line-height:25px;
+	font-size:20px;
+	text-align:right;
+}
+.login-content h1 span
+{
+	background:url(../images/close.png) no-repeat right center; padding:15px; cursor:pointer;
+}
+
+.login-content h1 span:hover {
+	background:url(../images/close_over.png) no-repeat right center; padding:15px;
+}
+
+.inputs{
+	padding: 0;
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+.inputs input, .inputs select.form-control{
+	margin:5px 0px;
+	border-radius:0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	height:30px;
+	font-size:12px;
+	background:none;
+}
+
+/*--------------------*/
+
+.login .actions {
+  border-top:1px solid #ddd;
+  padding:15px;
+  float:left;
+  width:100%;
+}
+
+.login .submit {    
+  background-color: #f4850c;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;    
+  border: 0px;
+  float: right;
+  height: 30px;
+  padding: 0;
+  width: 100px;
+  cursor: pointer;
+  color: #fff;
+  margin-left:10px;
+}
+.disable-btn
+{
+	background-color: #ccc;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	color:#333;
+	border: 0px;
+	float: right;
+	height: 30px;
+	padding: 0;
+	width: 100px;
+	cursor: pointer;
+}
+.disable-btn:hover
+{
+	background-color: #ddd;
+}
+
+.login .submit:hover,
+.login .submit:focus {    
+  background-color: #f4850c;
+} 
+
+.login .submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+.login .submit::-moz-focus-inner {
+  border: none;
+}
+
+.login .actions label {
+  float: left;
+  font-size:10px;
+  color:#333;
+  font-weight:normal;
+  padding-top:10px;
+}
+
+.login label input {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}

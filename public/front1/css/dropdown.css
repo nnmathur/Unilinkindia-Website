@@ -1,0 +1,107 @@
+.nav-menu {
+	text-transform:uppercase;
+	font-size:11px;
+}
+.nav-menu a,
+.nav-menu a:link,
+.nav-menu a:visited {
+    text-decoration: none;
+    color: #000;
+	line-height:16px;
+    padding: 26px 20px 26px;
+	border-left:1px solid #f1f1f1;
+}
+.nav-menu li:last-child{
+	border-right:1px solid #f1f1f1;
+}
+.nav-menu a:hover {
+    color: #0099cc;
+}
+.nav-menu {
+    white-space: nowrap;
+    display: inline-block;
+    /* IE7 inline-block fix */
+    *display: inline;
+    *zoom: 1;
+	margin: 0;
+	margin-right:125px;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+	float:left;
+    /* IE7 inline-block and padding fix */
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: bottom;
+	position: relative;
+}
+.nav-menu li a {
+    display: block;
+}
+.nav-menu ul {
+    position: absolute;
+	opacity:0;
+	visibility:hidden;
+    z-index: 1000000;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+	background: #384053;
+	-webkit-transition:padding 0.2s ease-in-out;
+	transition:padding 0.2s ease-in-out;
+}
+.nav-menu li:hover > ul
+{
+    display: block;
+	opacity:1;
+	margin:0;
+	visibility:visible;
+	-webkit-transition:margin 0.2s ease-in-out;
+	transition:margin 0.2s ease-in-out;
+}
+.nav-menu li:hover {
+	background:#fafafa;
+}
+.nav-menu li ul li:hover {
+    background: #0099cc;
+}
+.nav-menu li ul li {
+	float:none;
+}
+.nav-menu li ul li a,
+.nav-menu li ul li a:link
+.nav-menu li ul li a:visited, .nav-menu li ul li:last-child{
+	border-left:0px solid #f1f1f1 !important;
+	border-right:0px solid #f1f1f1 !important;
+}
+.nav-menu ul ul {
+    top: 0;
+    left: 100%;
+	margin-top:0px;
+}
+.nav-menu ul li {
+    position: relative;
+    display: block;
+}
+.nav-menu ul li a:link, .nav-menu ul li a:visited, .nav-menu ul li ul li a:link
+{
+	color:#fff;
+	padding:16px 40px 13px 25px;
+}
+.nav-menu ul li span.arrow-icon
+{
+	border-bottom:5px solid #384053;
+	border-top:5px solid transparent;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	position:absolute;
+	top:-10px;
+	left:50px;
+}
+.nav-menu ul li:hover span.arrow-icon
+{
+	border-bottom:5px solid #0099cc;
+}
