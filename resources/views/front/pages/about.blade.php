@@ -11,7 +11,7 @@
 			</ol>  
             
             <hr class="horizontal-brcolor career-horizontal-brcolor">           
-			<!-- Wrapper for slides -->
+			<!-- Wrapper for slides git test -->
 			<div class="carousel-inner small-slider">
 				<div class="item active">
 					<div class="inner-banner">
