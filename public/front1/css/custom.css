@@ -139,20 +139,41 @@
 .ol-box + .ol-box {
     margin-top: 20px; 
 }
+.otherproduct-links {
+    margin-top: 0;
+}
 .otherproduct-links .ol-box li a {
     color: #333;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     padding: 3px 0;
     display: block;
+    position: relative;
+}
+.otherproduct-links .ol-box.text-white li a {
+    color: #fff;
+}
+.otherproduct-links .ol-box li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 53%;
+    background: url(../images/angle-double-right.png) no-repeat center center;
+    background-size: 100%;
+    width: 13px;
+    height: 13px;
+    transform: translate(0, -50%);
 }
 .ol-box ol {
     padding-top: 8px;
-    padding-left: 15px;
+    padding-left: 0;
 }
 .ol-box ol li {
-    list-style-type: disc;
+    list-style: none;
     font-weight: 600;
+}
+.ol-box ol li a {
+    padding-left: 20px !important;
 }
 article .row h2 {
     margin: 20px 0 10px 0;
@@ -162,6 +183,9 @@ article .row h2 {
     background-color: #0021A5;
     color: #fff !important;
     padding-top: 12px;
+}
+.solution-details {
+    padding-top: 30px;
 }
 .solution-details .small-panel span {
     float: none;
@@ -179,12 +203,15 @@ article .row h2 {
     display: none !important;
 }
 .ol-box h4 {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 25px;
 }
 .ol-box h4 a {
     text-decoration: none;
     color: #000;
+}
+.ol-box.text-white h4 a {
+    color: #fff;
 }
 .w-100 {
     width: 100% !important;
@@ -199,19 +226,22 @@ article .row h2 {
 .story-block .features__item h2 {
     margin-top: 0px;
     text-align: left;
+    color: #fff;
 }
 .story-block .features__content p {
     text-align: left;
+    color: #fff;
 }
 .story-block .features__footer {
     text-align: left;
     padding: 0 30px 30px;
+    background: transparent;
 }
 .story-block {
     padding-top: 30px;
 }
 .features__item__link a {
-    color: #0021A5;
+    color: #fff;
 }
 .otherproduct-links .row {
     margin-left: -8px;
@@ -219,7 +249,7 @@ article .row h2 {
     margin-top: 16px;
 }
 .otherproduct-links .col-md-6 {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -232,7 +262,7 @@ article .row h2 {
     overflow: hidden;
 }
 .desc-right-box .ol-box {
-    min-height: 234px;
+    min-height: 226px;
 }
 .mt-0 {
     margin-top: 0 !important;
@@ -241,16 +271,109 @@ article .row h2 {
     font-size: 16px;
 }
 .content ul {
-    padding: 0 0 0 20px;
+    padding: 0;
 }
 .content ul li {
     font-weight: 300;
     line-height: 24px;
     font-size: 16px;
-    list-style-type: disc;
+    list-style-type: none;
     font-family: 'GothamRnd-Light', Arial, Tahoma, Verdana;
     padding-bottom: 10px;
+    position: relative;
+    padding-left: 28px;
 }
+.content ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background: url(../images/angle-double-right.png) no-repeat center center;
+    background-size: 100%;
+    width: 17px;
+    height: 17px;
+    transform: inherit;
+}
+ .content ul ul {
+    padding-top: 15px;
+}
+/*.content ul ul li {
+    list-style-type: disc;
+    padding-left: 0;
+} */
 .pt-30 {
     padding-top: 30px !important;
+}
+.gradient-banner {
+    background: rgb(212,20,90);
+    background: linear-gradient(52deg, rgba(212,20,90,1) 0%, rgba(251,176,59,1) 100%);
+    padding: 15px;
+    width: 100%;
+	margin-top:68px;
+    border-radius: 20px;
+    position: relative;
+}
+.gradient-banner h2 {
+    color: #fff;
+    margin-top: 0;
+}
+.gradient-banner .content {
+    margin-top: 12px;
+}
+.gradient-banner .content p {
+    color: #fff;
+    font-size: 16px;
+}
+.video-block {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 600px;
+    background: #333;
+    padding: 0 0 15px 15px;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+}
+.video-block iframe {
+    border-radius: 0 0 0 15px;
+    display: block;
+}
+.gh-box {
+    display: flex;
+    height: 480px;
+}
+.gradient-bg1 {
+    background: rgb(255,81,47);
+    background: linear-gradient(52deg, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
+}
+.gradient-bg2 {
+    background: rgb(255,97,210);
+    background: linear-gradient(52deg, rgba(255,97,210,1) 0%, rgba(254,144,144,1) 100%);
+}
+.gradient-bg3 {
+    background: rgb(234,141,141);
+    background: linear-gradient(52deg, rgba(234,141,141,1) 0%, rgba(168,144,254,1) 100%);
+}
+.gradient-bg4 {
+    background: rgb(234,206,141);
+    background: linear-gradient(52deg, rgba(234,206,141,1) 0%, rgba(254,144,175,1) 100%);
+}
+
+.gradient-bg5 {
+    background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+}
+.gradient-bg6 {
+    background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+}
+.gradient-bg7 {
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+}
+.gradient-bg8 {
+    background-image: linear-gradient( 135deg, #EECE13 10%, #B210FF 100%);
+}
+.gradient-bg9 {
+    background-image: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+}
+.text-white {
+    color: #fff !important;
 }

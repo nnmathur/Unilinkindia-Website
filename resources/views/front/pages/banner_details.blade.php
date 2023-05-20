@@ -165,13 +165,31 @@
         }
     </style>
 
-    <section class="header-spacing">
-        {{-- style="background-image: url({{ asset('storage/app/public/banner/'.$banner->image) }}); background-size: cover;)"	 --}}
+    {{-- <section class="header-spacing">
+        style="background-image: url({{ asset('storage/app/public/banner/'.$banner->image) }}); background-size: cover;)"	 
         <div class="inner-banner-prodetails dummy-banner industry-verticals-banner">
             <div class="container">
                 <div class="prodetails-banner-header" id="top-banner"> <br />
                     <span> </span>
                 </div>
+            </div>
+        </div>
+    </section>--}}
+    <section class="gradient-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-items-center gh-box">
+                    <div>
+                        <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                        {{ $banner->title }} </h2>
+                        <div class="content">
+                            <p>{{ $banner->short_description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-block">
+                <iframe width="100%" height="430" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -181,11 +199,11 @@
             <div class="row pt-30" id="top">
                 <div class="col-md-7">
                     <div class="dtl-content">
-                        <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                        {{-- <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
                             {{ $banner->title }} </h2>
                         <div class="content">
                             <p>{{ $banner->short_description }}</p>
-                        </div>
+                        </div> --}}
 
                         <?php //echo $banner->description;
                         ?>
@@ -214,20 +232,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 otherproduct-links" style="margin-top:45px;">
-                    <div class="ol-box">
+                <div class="col-md-5 otherproduct-links">
+                    <div class="ol-box gradient-bg5">
                         <h4><a href="#">Odoo ERP Consulting</a></h4>
                     </div>
-                    <div class="ol-box">
+                    <div class="ol-box gradient-bg2">
                         <h4><a href="#">Software Export Solutions</a></h4>
                     </div>
-                    <div class="ol-box">
+                    <div class="ol-box gradient-bg7">
                         <h4><a href="#">Shopify E-commerce Development</a></h4>
                     </div>
-                    <div class="ol-box">
+                    <div class="ol-box gradient-bg8">
                         <h4><a href="#">Laravel E-commerce Development</a></h4>
                     </div>
-                    <div class="ol-box">
+                    <div class="ol-box gradient-bg2">
                         <h4>Other Development</h4>
                         {{-- <ol class="list-unstyled">
                             @foreach ($banners as $ban)
@@ -264,7 +282,7 @@
                     <div class="row mt-3 clspam-2">
                         <div class="col-md-6">
                             <div class="features__item w-100">
-                                <div class="features__item__link">
+                                <div class="features__item__link gradient-bg1">
                                     <h2 class="features__title">
                                         ECOMMERCE PROJECTS
                                     </h2>
@@ -283,7 +301,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="features__item w-100">
-                                <div class="features__item__link">
+                                <div class="features__item__link gradient-bg2">
                                     <h2 class="features__title">
                                         ECOMMERCE PROJECTS
                                     </h2>
@@ -302,7 +320,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="features__item w-100">
-                                <div class="features__item__link">
+                                <div class="features__item__link gradient-bg3">
                                     <h2 class="features__title">
                                         ECOMMERCE PROJECTS
                                     </h2>
@@ -321,7 +339,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="features__item w-100">
-                                <div class="features__item__link">
+                                <div class="features__item__link gradient-bg4">
                                     <h2 class="features__title">
                                         ECOMMERCE PROJECTS
                                     </h2>
@@ -344,7 +362,7 @@
                 <div class="col-md-5 otherproduct-links desc-right-box mt-0">
                     <div class="row  mt-0">
                         <div class="col-md-6">
-                            <div class="ol-box">
+                            <div class="ol-box gradient-bg5">
                                 <h4>Related Blogs</h4>
                                 <ol class="list-unstyled">
                                     <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
@@ -359,7 +377,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box">
+                            <div class="ol-box gradient-bg6">
                                 <h4>Case Studios</h4>
                                 <ol class="list-unstyled">
                                     <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
@@ -374,7 +392,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box">
+                            <div class="ol-box gradient-bg7">
                                 <h4>Knowledge base</h4>
                                 <ol class="list-unstyled">
                                     <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
@@ -389,7 +407,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box">
+                            <div class="ol-box gradient-bg8">
                                 <h4>Documents</h4>
                                 <ol class="list-unstyled">
                                     <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
@@ -417,7 +435,7 @@
 				</div>
 		    </div>
 		     --}}
-            <div class="container product-details solution-details col-sm-12 hide" style="text-align:center;">
+            <div class="container product-details solution-details col-sm-12" style="text-align:center;">
                 <button id="btn1" onclick="scrollWin()" class="navbar-btn1" data-toggle="tooltip"
                     data-placement="top" title="View Our Success Story">The Success Story &nbsp </button>
 
