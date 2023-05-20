@@ -36,13 +36,13 @@
 
     <script src="js/jquery.min.js"></script>
     
-    <script src="{{ asset('public/front1/js/bootstrap.js') }}" type="text/javascript"></script>    
-    <script src="{{ asset('public/front1/js/jquery.validate.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('public/front1/js/jquery-validate.bootstrap-tooltip.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('public/front1/js/validation.js') }}" type="text/javascript"></script>
-	<script src="{{ asset('public/front1/js/inrhythm.js') }}" type="text/javascript"></script>
-	<script src="{{ asset('public/front1/js/main.js') }}"></script>
-    <script src="{{ asset('public/front1/js/wow.min.js') }}"></script>
+    <script src="{{ asset('front1/js/bootstrap.js') }}" type="text/javascript"></script>    
+    <script src="{{ asset('front1/js/jquery.validate.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('front1/js/jquery-validate.bootstrap-tooltip.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('front1/js/validation.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('front1/js/inrhythm.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('front1/js/main.js') }}"></script>
+    <script src="{{ asset('front1/js/wow.min.js') }}"></script>
    
 <script type="text/javascript">
 var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
@@ -51,6 +51,26 @@ var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqsc
 s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 </script>
   </body>
+  <script>
+  	$(document).ready(function() {
+  $('.counter').each(function() {
+    var $this = $(this);
+    var countTo = $this.text();
+    $({ countNum: 0 }).animate({
+      countNum: countTo
+    }, {
+      duration: 2000,
+      easing: 'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+    });
+  });
+});
+  </script>
 
 
 </html>
