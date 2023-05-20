@@ -31,6 +31,7 @@
 	
 	<link href="{{ asset('public/front1/css/unlmain.css') }}" rel="stylesheet">
 	<link href="{{ asset('public/front1/css/unilink.css') }}" rel="stylesheet">
+	<link href="{{ asset('public/front1/css/custom.css') }}" rel="stylesheet">
 	<!--<link href="{{ asset('public/front1/css/unilinknew.css') }}" rel="stylesheet">-->
 	
 	<style>
