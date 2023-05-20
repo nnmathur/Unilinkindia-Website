@@ -1646,11 +1646,11 @@ article .row .productsordered-list hr.horizontal-brcolor{
 	display:inline-block;
 	margin-top:0px;	
 }
-.aboutus-slider .carousel-inner h2{
+h2{
 	line-height:20px;
 	padding:10px 0;
 }
-.aboutus-slider .carousel-inner h2 small{
+h2 small{
 	font-size:50%;
 }
 section .container .col-md-6 .aboutus-col{
@@ -1716,14 +1716,14 @@ section .container .about-leadership
 	padding:10px;
 	padding-top:0;
 }
-.aboutus-slider .carousel-inner .leadership, .aboutus-slider .carousel-inner .careers, .aboutus-slider .carousel-inner .contact
+.leadership, .careers, .contact
 {
 	margin-top:100px;
 }
-.aboutus-slider .carousel-inner .company .mission-block{
+.company .mission-block{
 	width:100%; height:594px; left:0; right:0; margin-top:150px; margin-bottom:30px; position:relative;
 }
-.aboutus-slider .carousel-inner .company .mission-block .aboutus_company_slidebg
+.company .mission-block .aboutus_company_slidebg
 {
 	height:270px; width:100%; position:absolute; bottom:0; background: #f3eee2; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f3eee2 0%, #f9f4eb 100%); /* FF3.6+ */
@@ -1735,49 +1735,49 @@ section .container .about-leadership
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3eee2', endColorstr='#f9f4eb',GradientType=0 ); /* IE6-9 */
 
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text
+.company .company-highlighted-text
 {
 	height:200px; margin-top:59px; width:25%;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2{
+.company .company-highlighted-text h2{
 	font-size:30px; line-height:25px;
 }
-    .aboutus-slider .carousel-inner .company .company-highlighted-text h2.growing, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.growing small {
+    .company .company-highlighted-text h2.growing, .company .company-highlighted-text h2.growing small {
         color:#f78930;
     }
-        .aboutus-slider .carousel-inner .company .company-highlighted-text h2.growing span {
+        .company .company-highlighted-text h2.growing span {
             border:2px solid #f78930; -webkit-border-radius:60px; -moz-border-radius:60px; border-radius:60px; width:120px; height:120px; padding-top:45px; display:inline-block; font-weight:bold;
         }
-    .aboutus-slider .carousel-inner .company .company-highlighted-text h2.fortune, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.fortune small {
+    .company .company-highlighted-text h2.fortune, .company .company-highlighted-text h2.fortune small {
         color:#b1d348;
     }
-        .aboutus-slider .carousel-inner .company .company-highlighted-text h2.fortune span {
+        .company .company-highlighted-text h2.fortune span {
             border:2px solid #b1d348; -webkit-border-radius:60px; -moz-border-radius:60px; border-radius:60px; width:120px; height:120px; padding-top:45px; display:inline-block; font-weight:bold;
         }
-    .aboutus-slider .carousel-inner .company .company-highlighted-text h2.strategic, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.strategic small {
+    .company .company-highlighted-text h2.strategic, .company .company-highlighted-text h2.strategic small {
         color:#be2e9f;
     }
-        .aboutus-slider .carousel-inner .company .company-highlighted-text h2.strategic span {
+        .company .company-highlighted-text h2.strategic span {
             border:2px solid #be2e9f; -webkit-border-radius:60px; -moz-border-radius:60px; border-radius:60px; width:120px; height:120px; padding-top:45px; display:inline-block; font-weight:bold;
         }
-    .aboutus-slider .carousel-inner .company .company-highlighted-text h2.customer, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.customer small {
+    .company .company-highlighted-text h2.customer, .company .company-highlighted-text h2.customer small {
         color:#5bc0de;
     }
-        .aboutus-slider .carousel-inner .company .company-highlighted-text h2.customer span {
+        .company .company-highlighted-text h2.customer span {
             border:2px solid #5bc0de; -webkit-border-radius:60px; -moz-border-radius:60px; border-radius:60px; width:120px; height:120px; padding-top:45px; display:inline-block; font-weight:bold;
         }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2 small
+.company .company-highlighted-text h2 small
 {
 	font-size:16px;
 }
-.aboutus-slider .carousel-inner .company .mission-block .mission-img
+.company .mission-block .mission-img
 {
 	background:url('../images/mission_bg.png') no-repeat bottom; bottom:0; height:597px; z-index:10; position:relative; margin-top:180px;
 }
-.aboutus-slider .carousel-inner .company .mission-block .mission-img h3{
+.company .mission-block .mission-img h3{
 	margin:-40px auto 0 auto;  width:60%; font-size:28px;
 }
-.aboutus-slider .carousel-inner .careers .col-md-3, .aboutus-slider .carousel-inner .contact .col-md-3, .services .col-md-5, .partners .col-md-5, .customers .col-md-4
+.careers .col-md-3, .contact .col-md-3, .services .col-md-5, .partners .col-md-5, .customers .col-md-4
 {
 	padding-left:0;
 }
@@ -1792,76 +1792,76 @@ section .container .about-leadership
 {
 	margin-top:0;
 }
-.aboutus-slider .carousel-inner .careers .col-md-9, .aboutus-slider .carousel-inner .contact .col-md-9, .services .col-md-7, .customers .col-md-7, .partners .col-md-7, .company .col-md-9
+.careers .col-md-9, .contact .col-md-9, .services .col-md-7, .customers .col-md-7, .partners .col-md-7, .company .col-md-9
 {
 	padding-right:0;	
 }
-.aboutus-slider .carousel-inner .contact .col-md-9 iframe
+.contact .col-md-9 iframe
 {
-	style="border:0; margin-top:-30px;"
+	border:0; margin-top:-30px;
 }
 .map-canvas-container{
 	width:100%; height:300px;
 }
-.aboutus-slider .carousel-inner .careers h3.career-header
+.careers h3.career-header
 {
 	font-size:28px; margin-bottom:40px;
 }
-.aboutus-slider .carousel-inner .careers .work-culture
+.careers .work-culture
 {
 	padding:0 5px; margin-top:20px;
 }
-.aboutus-slider .carousel-inner .careers .work-culture .img-border01 {
+.careers .work-culture .img-border01 {
             border:2px solid #f78930; -webkit-border-radius:35px; -moz-border-radius:35px; border-radius:35px; width:70px; height:70px; display:inline-block; padding-top:22px;
         }
-.aboutus-slider .carousel-inner .careers .work-culture .img-border02 {
+.careers .work-culture .img-border02 {
             border:2px solid #b1d348; -webkit-border-radius:35px; -moz-border-radius:35px; border-radius:35px; width:70px; height:70px; display:inline-block; padding-top:20px;
         }
-.aboutus-slider .carousel-inner .careers .work-culture .img-border03 {
+.careers .work-culture .img-border03 {
             border:2px solid #5bc0de; -webkit-border-radius:35px; -moz-border-radius:35px; border-radius:35px; width:70px; height:70px; display:inline-block; padding-top:20px;
         }
 
-.aboutus-slider .carousel-inner .careers .work-culture .workculture-header
+.careers .work-culture .workculture-header
 {
 	text-transform:uppercase; color:#000; font-size:15px;
 }
-.aboutus-slider .carousel-inner .careers-footerslider
+.careers-footerslider
 {
 	float:left; margin-bottom:50px; position:relative; height:450px; width:100%;
 }
-.aboutus-slider .carousel-inner .careers-footerslider .carousel-indicators{
+.careers-footerslider .carousel-indicators{
 	display:none;
 }
-.aboutus-slider .carousel-inner .careers-footerslider .careers-footerimage
+.careers-footerslider .careers-footerimage
 {
 	background:url('../images/careers_bottomslide.jpg') no-repeat; background-size:cover; height:450px;
 }
-.aboutus-slider .carousel-inner .careers-footerslider .careers-footerimage02
+.careers-footerslider .careers-footerimage02
 {
 	background:url('../images/careers_bottomslide.jpg') no-repeat; background-size:cover; height:450px;
 }
-.aboutus-slider .carousel-inner .careers-footerslider .carousel-control{
+.careers-footerslider .carousel-control{
 	top:0;
 	padding-left:20px;
 	padding-right:20px;
 	z-index:100;
 	display:block;
 }
-.aboutus-slider .carousel-inner .careers .col-md-3 h3
+.careers .col-md-3 h3
 {
 	margin-top:0;	
 	text-transform:uppercase;
 }
-.aboutus-slider .carousel-inner .contact h4
+.contact h4
 {
 	margin-top:20px;	
 	text-transform:uppercase;
 }
-.aboutus-slider .carousel-inner .contact .horizontal-brcolor
+.contact .horizontal-brcolor
 {
 	margin-bottom:0;
 }
-.aboutus-slider .carousel-inner .contact .col-md-9, .aboutus-slider .carousel-inner .contact .col-md-3
+.contact .col-md-9, .contact .col-md-3
 {
 	margin-top:20px;
 }
@@ -1996,7 +1996,7 @@ article .row h2{
 #aside .col-md-5 .small-slider{
 	width:90%; margin:0 auto;
 }
-.aboutus-slider .carousel-inner .company .mission-block .mission-img h3{
+.company .mission-block .mission-img h3{
 	width:80%;
 }
 #aside .col-md-5 .small-slider-incicators, .customers .col-md-7 .small-slider-incicators{
@@ -2093,23 +2093,23 @@ article .row h2{
 .small-panellast{
 	padding-left:0;
 }
-.aboutus-slider .carousel-inner .company .mission-block{
+.company .mission-block{
 	height:414px; margin-top:100px;
 }
-.aboutus-slider .carousel-inner .company .mission-block .mission-img{
+.company .mission-block .mission-img{
 	height:417px; margin-top:130px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text{
+.company .company-highlighted-text{
 	float:left; padding:40px; padding-top:0;
 }
-.aboutus-slider .carousel-inner .careers .work-culture img{
+.careers .work-culture img{
 	width:auto;
 }
-.aboutus-slider .carousel-inner .company .mission-block .mission-img
+.company .mission-block .mission-img
 {
 	background-size:contain;
 }
-.aboutus-slider .carousel-inner .careers .col-md-3, .aboutus-slider .carousel-inner .contact .col-md-3, .services .col-md-5, .partners .col-md-5, .customers .col-md-4
+.careers .col-md-3, .contact .col-md-3, .services .col-md-5, .partners .col-md-5, .customers .col-md-4
 {
 	padding:10px;
 }
@@ -2118,7 +2118,7 @@ article .row h2{
 	margin:0 25px;
 	font-size:12px;
 }
-.services .col-md-3 h3, .partners .col-md-3 h3, .aboutus-slider .small-slider h3, .aboutus-slider .carousel-inner .careers .col-md-3 h3 {
+.services .col-md-3 h3, .partners .col-md-3 h3, .aboutus-slider .small-slider h3, .careers .col-md-3 h3 {
 	margin-top:30px;
 }
 .solutions-offerings .solution-linkfirst, .solutions-offerings .solution-linkmiddle, .solutions-offerings .solution-linklast {
@@ -2170,7 +2170,7 @@ br{
 .services img, .partners img{
 	padding-right:15px;
 }
-.services .col-md-3 h3, .partners .col-md-3 h3, .aboutus-slider .small-slider h3, .aboutus-slider .carousel-inner .careers .col-md-3 h3 {
+.services .col-md-3 h3, .partners .col-md-3 h3, .aboutus-slider .small-slider h3, .careers .col-md-3 h3 {
 	margin-top:30px;
 }
 .product-details .no-padding, .aboutus-slider .small-slider .container img
@@ -2193,7 +2193,7 @@ br{
 .sma-img{
  right:10px;
 }
-.aboutus-slider .carousel-inner .careers .col-md-3, .aboutus-slider .carousel-inner .contact .col-md-3, .partners .col-md-5, .customers .col-md-4, section .container .col-md-6
+.careers .col-md-3, .contact .col-md-3, .partners .col-md-5, .customers .col-md-4, section .container .col-md-6
 {
 	padding:10px;
 }
@@ -2347,7 +2347,7 @@ p{
 .nav-menu li:last-child{
 	border:0px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text{
+.company .company-highlighted-text{
 	padding:20px;
 }
 .nav-menu a, .nav-menu a:link, .nav-menu a:visited
@@ -2576,14 +2576,14 @@ p{
 }
 
 @media screen and (max-width:480px){
-.aboutus-slider .carousel-inner .company .company-highlighted-text{
+.company .company-highlighted-text{
 	padding:15px;
 	margin-top:39px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2{
+.company .company-highlighted-text h2{
 	font-size:25px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2 small{
+.company .company-highlighted-text h2 small{
 	font-size:13px;
 }
 .aboutus-bannerscaption h1, .aboutus-bannerscaption02 h1{
@@ -2649,7 +2649,7 @@ article .row .col-gap h3, article .row .col-gap02 h3, article .row .col-gap03 h3
 {
 	position:absolute; right:-25%; top:25%;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2.growing span, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.fortune span, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.strategic span, .aboutus-slider .carousel-inner .company .company-highlighted-text h2.customer span {
+.company .company-highlighted-text h2.growing span, .company .company-highlighted-text h2.fortune span, .company .company-highlighted-text h2.strategic span, .company .company-highlighted-text h2.customer span {
     width:70px; height:70px; padding-top:20px; font-size:20px;
 }
 .login .actions label{
@@ -2762,13 +2762,13 @@ p{
 .product-subhead strong{
 	font-size:12px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text{
+.company .company-highlighted-text{
 	padding:5px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2{
+.company .company-highlighted-text h2{
 	font-size:25px;
 }
-.aboutus-slider .carousel-inner .company .company-highlighted-text h2 small{
+.company .company-highlighted-text h2 small{
 	font-size:10px;
 }
 section .aboutus-slider .team-rightpanel, section .container .col-md-6 .aboutus-col

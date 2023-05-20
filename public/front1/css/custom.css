@@ -1,0 +1,256 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background: #fff;
+}
+
+.pic {
+    height: auto;
+    width: 400px;
+    border-radius: 12px;
+}
+
+.about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 540px;
+}
+
+.text h2 {
+    color: #333;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text h5 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.data {
+    margin-top: 30px;
+}
+
+.hire {
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.hire:hover {
+    background: #000;
+}
+
+.company-block .row {
+    display: flex;
+    padding: 15px 0;
+}
+
+.leadership-block .row {
+    padding: 15px 0;
+}
+.company-block .order-2,
+.leadership-block .order-2 {
+    order: 2;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* .leadership-list .row:nth-child(2) .col-md-4,
+.leadership-list .row:nth-child(4) .col-md-4 {
+    order: 2;
+    text-align: right;
+}
+
+.leadership-list .row:nth-child(2) .col-md-8,
+.leadership-list .row:nth-child(4) .col-md-8 {
+    text-align: right;
+} */
+
+.leadership-block {
+    margin-top: 15px !important;
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important;
+}
+
+.company h2 {
+    font-weight: 600;
+}
+
+.mxh-auto {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.mxw-150 {
+    max-height: 120px;
+    padding-right: 10px;
+}
+
+.mxh-auto::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 6px;
+}
+
+.mxh-auto::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 6px;
+}
+
+.mxh-auto::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+}
+
+.ol-box {
+    padding: 20px;
+    border: solid 1px #eeeeee;
+    border-radius: 0; 
+}
+.ol-box + .ol-box {
+    margin-top: 20px; 
+}
+.otherproduct-links .ol-box li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 0;
+    display: block;
+}
+.ol-box ol {
+    padding-top: 8px;
+    padding-left: 15px;
+}
+.ol-box ol li {
+    list-style-type: disc;
+    font-weight: 600;
+}
+article .row h2 {
+    margin: 20px 0 10px 0;
+    line-height: 28px;
+}
+.small-panel span {
+    background-color: #0021A5;
+    color: #fff !important;
+    padding-top: 12px;
+}
+.solution-details .small-panel span {
+    float: none;
+    top: 1px !important;
+}
+.solution-details .small-panel {
+    margin-bottom: 20px;
+}
+.solution-details .small-panel .panel-point {
+   float: none !important;
+   margin-left: 0 !important;
+   width: 100% !important;
+}
+.solution-details .slsmall-point {
+    display: none !important;
+}
+.ol-box h4 {
+    font-size: 17px;
+    line-height: 25px;
+}
+.ol-box h4 a {
+    text-decoration: none;
+    color: #000;
+}
+.w-100 {
+    width: 100% !important;
+}
+.story-block .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.story-block .features__item {
+    margin-bottom: 30px !important;
+}
+.story-block .features__item h2 {
+    margin-top: 0px;
+    text-align: left;
+}
+.story-block .features__content p {
+    text-align: left;
+}
+.story-block .features__footer {
+    text-align: left;
+    padding: 0 30px 30px;
+}
+.story-block {
+    padding-top: 30px;
+}
+.features__item__link a {
+    color: #0021A5;
+}
+.otherproduct-links .row {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 16px;
+}
+.otherproduct-links .col-md-6 {
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.story-block .features__content {
+    margin-bottom: 10px;
+    max-height: 70px;
+    overflow: hidden;
+}
+.desc-right-box .ol-box {
+    min-height: 234px;
+}
+.mt-0 {
+    margin-top: 0 !important;
+}
+.dtl-content .content p {
+    font-size: 16px;
+}
+.content ul {
+    padding: 0 0 0 20px;
+}
+.content ul li {
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+    list-style-type: disc;
+    font-family: 'GothamRnd-Light', Arial, Tahoma, Verdana;
+    padding-bottom: 10px;
+}
+.pt-30 {
+    padding-top: 30px !important;
+}
