@@ -152,7 +152,7 @@
 .otherproduct-links .ol-box li a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
     padding: 3px 0;
     display: block;
     position: relative;
@@ -169,8 +169,8 @@
     top: 53%;
     background: url(../images/white-angle-double-right.png) no-repeat center center;
     background-size: 100%;
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
     transform: translate(0, -50%);
 }
 
@@ -298,7 +298,12 @@ article .row h2 {
 .otherproduct-links .ol-box .br-inner {
     min-height: inherit;
 }
-
+.otherproduct-links .ol-box.ol-box-oneline .br-inner {
+    padding: 10px;
+}
+.ol-box.ol-box-oneline h4 {
+    font-size: 14px;
+}
 .mb-20 {
     margin-bottom: 20px !important;
 }
@@ -501,7 +506,7 @@ article .row h2 {
     background: transparent;
 }
 .br-inner {
-    border: solid 5px rgb(255 255 255 /40%);
+    border: solid 3px rgb(255 255 255 /40%);
     border-radius: 12px;
 }
 .common-title {
@@ -536,4 +541,22 @@ article .row h2 {
 }
 .divClass ul {
     margin-bottom: 25px !important;
+}
+.theme-blue {
+    background: blue !important;
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+}
+.ol-box-oneline {
+    border-radius: 12px;
+}
+.gradient-bg-red {
+    background: rgb(212, 20, 90);
+    background: linear-gradient(52deg, rgba(212, 20, 90, 1) 0%, rgba(251, 176, 59, 1) 100%);
+}
+.gradient-bg-purple {
+    background: linear-gradient(-135deg,#9d3be0 0,#1867b9 100%) !important;
+}
+.divClass h3 {
+    font-weight: 600 !important;
 }

@@ -132,14 +132,14 @@
             margin: 0 0px 50px 0px;
             color: white;
             padding: 15px;
-            background-color: blue;
-            border: 1px solid blue;
+            background-color: orange;
+            border: 1px solid orange;
         }
 
         .navbar-btn1:hover {
             color: white;
-            background-color: orange;
-            border: 1px solid orange;
+            background-color: blue;
+            border: 1px solid blue;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
@@ -197,7 +197,7 @@
     <article>
         <div class="container product-details solution-details">
             <div class="row pt-30" id="top">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="dtl-content">
                         {{-- <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
                             {{ $banner->title }} </h2>
@@ -214,28 +214,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 otherproduct-links">
-                    <div class="ol-box zoom gradient-bg gradient-bg5">
+                <div class="col-md-4 otherproduct-links">
+                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg5">
                         <div class="br-inner">
                             <h4><a href="#">Odoo ERP Consulting</a></h4>
                         </div>
                     </div>
-                    <div class="ol-box zoom gradient-bg gradient-bg2">
+                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg2">
                         <div class="br-inner">
                             <h4><a href="#">Software Export Solutions</a></h4>
                         </div>
                     </div>
-                    <div class="ol-box zoom gradient-bg gradient-bg7">
+                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg7">
                         <div class="br-inner">
                             <h4><a href="#">Shopify E-commerce Development</a></h4>
                         </div>
                     </div>
-                    <div class="ol-box zoom gradient-bg gradient-bg8">
+                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg8">
                         <div class="br-inner">
                             <h4><a href="#">Laravel E-commerce Development</a></h4>
                         </div>
                     </div>
-                    <div class="ol-box zoom gradient-bg gradient-bg2">
+                    <div class="ol-box ol-box-oneline zoom gradient-bg-red">
                         <div class="br-inner">
                             <h4>Other Development</h4>
                             {{-- <ol class="list-unstyled">
@@ -273,7 +273,7 @@
                 <div class="col-md-7">
                     <div class="row mt-3 clspam-2">
                         <div class="col-md-6">
-                            <div class="features__item w-100 zoom gradient-bg gradient-bg1">
+                            <div class="features__item w-100 zoom theme-blue gradient-bg1">
                                 <div class="br-inner">
                                     <div class="features__item__link">
                                         <h2 class="features__title">
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features__item w-100 zoom gradient-bg gradient-bg2">
+                            <div class="features__item w-100 zoom theme-blue gradient-bg2">
                                 <div class="br-inner">
                                     <div class="features__item__link">
                                         <h2 class="features__title">
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features__item w-100 zoom gradient-bg gradient-bg3">
+                            <div class="features__item w-100 zoom theme-blue gradient-bg3">
                                 <div class="br-inner">
                                     <div class="features__item__link">
                                         <h2 class="features__title">
@@ -336,7 +336,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features__item w-100 zoom gradient-bg gradient-bg4">
+                            <div class="features__item w-100 zoom theme-blue gradient-bg4">
                                 <div class="br-inner">
                                     <div class="features__item__link">
                                         <h2 class="features__title">
@@ -362,7 +362,7 @@
                 <div class="col-md-5 otherproduct-links desc-right-box mt-0">
                     <div class="row  mt-0">
                         <div class="col-md-6">
-                            <div class="ol-box zoom gradient-bg gradient-bg5">
+                            <div class="ol-box zoom theme-blue gradient-bg5">
                                 <div class="br-inner">
                                     <h4>Related Blogs</h4>
                                     <ol class="list-unstyled">
@@ -379,7 +379,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box zoom gradient-bg gradient-bg6">
+                            <div class="ol-box zoom theme-blue gradient-bg6">
                                 <div class="br-inner">
                                     <h4>Case Studios</h4>
                                     <ol class="list-unstyled">
@@ -396,7 +396,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box zoom gradient-bg gradient-bg7">
+                            <div class="ol-box zoom theme-blue gradient-bg7">
                                 <div class="br-inner">
                                     <h4>Knowledge base</h4>
                                     <ol class="list-unstyled">
@@ -413,7 +413,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box zoom gradient-bg gradient-bg8">
+                            <div class="ol-box zoom theme-blue gradient-bg8">
                                 <div class="br-inner">
                                     <h4>Documents</h4>
                                     <ol class="list-unstyled">
@@ -454,8 +454,8 @@
                     </button>
                 </a>
 
-                <div class="divClass" style="text-align:left;">
-                    <div id="casestudy">
+                <div class="divClass gradient-bg-purple" style="text-align:left;">
+                    <div id="casestudy" class="gradient-bg-purple text-white">
                         <?php echo $banner->success_story; ?>
                     </div>
                 </div>
