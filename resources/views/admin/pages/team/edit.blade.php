@@ -117,7 +117,7 @@ $userId= Auth::user()->id;
                   <input type="file" name="image" id="imageUpload" class="hide"> 
                   <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
                   @if(trim($image))
-                    <img src="{{ asset('storage/app/public/team/'.$image) }}" class="organisation-logo">
+                    <img src="{{ asset('/uploads/team/'.$image) }}" class="organisation-logo">
                   @else
                     <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
                   @endif

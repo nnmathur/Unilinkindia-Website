@@ -11,7 +11,15 @@
 					<h2 class="text-center career-header common-title">ABOUT COMPANY</h2>
 					<div class="row align-items-center">
 						<div class="col-md-5">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
+							@php 
+
+								$who_we_are_image = isset($about->who_we_are_image) ? 'uploads/about-us/'.$about->who_we_are_image: '/front1/images/industry1.png';
+
+								$our_global_image = isset($about->our_global_image) ? 'uploads/about-us/'.$about->our_global_image: '/front1/images/industry1.png';
+
+								$what_we_do_image = isset($about->what_we_do_image) ? 'uploads/about-us/'.$about->what_we_do_image: '/front1/images/industry1.png';
+							@endphp
+							<img src="{{ asset($who_we_are_image) }}" class="pic zoom"  width="445" height="318" style="width: 445px !important; height: 318px !important;"/>
 						</div>
 						<div class="col-md-7">
 							<h3>WHO WE ARE</h3>
@@ -20,7 +28,7 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-md-5 order-2">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
+							<img src="{{ asset($our_global_image) }}" class="pic zoom" style="width: 445px !important; height: 318px !important;"/>
 						</div>
 						<div class="col-md-7">
 							<h3>OUR GOAL</h3>
@@ -29,7 +37,7 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-md-5">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
+							<img src="{{ asset($what_we_do_image) }}" class="pic zoom"  style="width: 445px !important; height: 318px !important;"/>
 						</div>
 						<div class="col-md-7">
 							<h3>WHAT WE DO</h3>
@@ -49,9 +57,9 @@
 						<div class="col-md-6">
 							<div class="row align-items-center">
 								<div class="col-md-4">
-									{{-- <img id="img-team" src="{{ asset('storage/app/public/team/' . $team->image) }}"
+									{{-- <img id="img-team" src="{{ asset('uploads/team/' . $team->image) }}"
 										alt="{{ $team->name }}" class="pull-left" /> --}}
-									<img id="img-team" src="{{ asset('/front1/images/team/' . $team->image) }}"
+									<img id="img-team" src="{{ asset('uploads/team/' . $team->image) }}"
 										alt="{{ $team->name }}" class="pull-left zoom" />
 								</div>
 								<div class="col-md-8 about-leadership">

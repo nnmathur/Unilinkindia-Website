@@ -65,8 +65,18 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 label-control" for="userinput3"> Who We Are <span class="text-danger">*</span> :</label>
                                                 <div class="col-md-9">      
-                                                    <textarea class="summernote" name="who_we_are">{{ $aboutData->who_we_are }}</textarea>
+                                                    <textarea class="ckeditor" name="who_we_are">{{ $aboutData->who_we_are }}</textarea>
                                                 </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="userinput3"> Who We Are Image<span class="text-danger">*</span> :</label>
+                                                <div class="col-md-9">      
+                                                    <input type="file" name="who_we_are_image" class="form-control" accept="image/jpeg, image/png,image/jpg"/>
+                                                @if($aboutData->who_we_are_image)
+                                                    <img src="{{ asset('uploads/about-us/'.$aboutData->who_we_are_image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                @endif
+                                                </div>
+          
                                             </div>
                                         </div>
                                     </div>  
@@ -80,8 +90,19 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 label-control" for="userinput3"> Our Global <span class="text-danger">*</span> :</label>
                                                 <div class="col-md-9">      
-                                                    <textarea class="summernote" name="our_global">{{ $aboutData->our_global }}</textarea>
+                                                    <textarea class="ckeditor" name="our_global">{{ $aboutData->our_global }}</textarea>
                                                 </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="userinput3"> Our Global Image<span class="text-danger">*</span> :</label>
+                                                <div class="col-md-9">      
+                                                    <input type="file" name="our_global_image" class="form-control" accept="image/jpeg, image/png,image/jpg"/>
+
+                                                          @if($aboutData->our_global_image)
+                                                    <img src="{{ asset('uploads/about-us/'.$aboutData->our_global_image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                @endif
+                                                </div>
+                                          
                                             </div>
                                         </div>
                                     </div>  
@@ -95,7 +116,16 @@
                                             <div class="form-group row">
                                                 <label class="col-md-3 label-control" for="userinput3"> What We Do :</label>
                                                 <div class="col-md-9">      
-                                                    <textarea class="summernote" name="what_we_do">{{ $aboutData->what_we_do }}</textarea>
+                                                    <textarea class="ckeditor" name="what_we_do">{{ $aboutData->what_we_do }}</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="userinput3"> What We Do Image<span class="text-danger">*</span> :</label>
+                                                <div class="col-md-9">      
+                                                    <input type="file" name="what_we_do_image" class="form-control" accept="image/jpeg, image/png,image/jpg"/>
+                                              @if($aboutData->what_we_do_image)
+                                                    <img src="{{ asset('uploads/about-us/'.$aboutData->what_we_do_image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                @endif
                                                 </div>
                                             </div>
                                         </div>

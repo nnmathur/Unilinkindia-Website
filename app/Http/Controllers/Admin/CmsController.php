@@ -260,6 +260,26 @@ class CmsController extends Controller
     
     public function updateabout(Request $request)
     {
+
+      $about_page = AboutPage::find(1);
+
+
+       if(isset($request->who_we_are_image) && $request->who_we_are_image->getClientOriginalName()){
+                $ext1 = $request->who_we_are_image->getClientOriginalExtension();
+                $file1 = date('YmdHis').rand(1,99999).'.'.$ext1;     
+                $request->who_we_are_image->move(public_path('uploads/about-us/'), $file1);
+        }
+       if(isset($request->what_we_do_image) && $request->what_we_do_image->getClientOriginalName()){
+                $ext2 = $request->what_we_do_image->getClientOriginalExtension();
+                $file2 = date('YmdHis').rand(1,99999).'.'.$ext2;     
+                $request->what_we_do_image->move(public_path('uploads/about-us/'), $file2);
+        }
+       if(isset($request->our_global_image) && $request->our_global_image->getClientOriginalName()){
+                $ext3 = $request->our_global_image->getClientOriginalExtension();
+                $file3 = date('YmdHis').rand(1,99999).'.'.$ext3;     
+                $request->our_global_image->move(public_path('uploads/about-us/'), $file3);
+        }
+
         try 
         { 
             $id = 1;
@@ -271,7 +291,10 @@ class CmsController extends Controller
                 'it_year' => $request->input('it_year'),
                 'exp_year' => $request->input('exp_year'),
                 'comp_project' => $request->input('comp_project'),
-                'cust_success' => $request->input('cust_success')
+                'cust_success' => $request->input('cust_success'),
+                'who_we_are_image' => isset($file1) ? $file1 :$about_page->who_we_are_image,
+                'what_we_do_image' => isset($file2) ? $file2 :$about_page->what_we_do_image,
+                'our_global_image' => isset($file3) ? $file3 :$about_page->our_global_image,
             ];
          
             $rs = AboutPage::where(['id'=> '1'])->update($data);

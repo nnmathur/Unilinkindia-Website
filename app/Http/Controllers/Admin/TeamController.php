@@ -37,7 +37,8 @@ class TeamController extends Controller
             if($request->image){
               $ext = $request->image->getClientOriginalExtension();
               $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-              $request->image->storeAs('public/team',$file);
+              // $request->image->storeAs('public/team',$file);
+              $request->image->move(public_path('/uploads/team/'), $file);
             }
             else
             {
@@ -111,7 +112,8 @@ class TeamController extends Controller
           if(isset($request->image)){
             $ext = $request->image->getClientOriginalExtension();
             $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-            $request->image->storeAs('public/team',$file);
+            //$request->image->storeAs('public/team',$file);
+            $request->image->move(public_path('/uploads/team/'), $file);
           }
           else
           {

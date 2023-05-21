@@ -104,7 +104,7 @@
 									                        <input type="file" name="image" id="imageUpload" class="hide"> 
 									                        <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 MB<br>
 									                        @if($bannerData->image)
-									                        <img src="{{ asset('storage/app/banner/'.$bannerData->image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+									                        <img src="{{ asset('uploads/banner/'.$bannerData->image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
 									                        @else
 									                        <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
 									                        @endif

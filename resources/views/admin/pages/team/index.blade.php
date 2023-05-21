@@ -72,7 +72,7 @@
 												<td>{{ $u->name }}</td>
 												<td>
 													@if($u->image)
-									                    <img src="{{ asset('storage/app/public/team/'.$u->image) }}" style="width: 100px; height: 70px;">
+									                    <img src="{{ asset('uploads/team/'.$u->image) }}" style="width: 100px; height: 70px;">
 									                  @else
 									                    <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
 									                  @endif
