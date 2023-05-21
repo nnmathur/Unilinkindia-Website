@@ -65,7 +65,7 @@ $userbandel= Auth::user()->bandel;
 														@if($u->image)
 								                        <img src="../storage/app/public/banner/{{ $u->image }}" style="width: 150px; height: 100px;">
 								                        @else
-								                        <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" style="width: 150px; height: 100px;" alt="Your image will appear here.">
+								                        <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" style="width: 150px; height: 100px;" alt="Your image will appear here.">
 								                        @endif
 													</td>
 													<td>

@@ -9,24 +9,24 @@
     <meta name="author" content="">
     <title>Admin Panel Login</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('public/front/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ asset('public/front/images/icon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('front/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('front/images/icon.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CMuli:300,400,500,700" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/vendors.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/datatable/datatables.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/extensions/buttons.dataTables.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/datatable/buttons.bootstrap4.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/vendors.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/datatable/datatables.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/extensions/buttons.dataTables.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/datatable/buttons.bootstrap4.min.css') }}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN ROBUST CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/app.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/app.min.css') }}">
     <!-- END ROBUST CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/core/menu/menu-types/vertical-menu.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/core/colors/palette-gradient.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/core/menu/menu-types/vertical-menu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/core/colors/palette-gradient.min.css') }}">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/style.css') }}">
     <!-- END Custom CSS-->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -43,7 +43,7 @@
                         <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                             <div class="card-header border-0">
                                 <div class="card-title text-center">
-                                    <img src="{{ asset('public/front/images/logo/logo3.png') }}" alt="branding logo" style="width: 100%;">
+                                    <img src="{{ asset('front/images/logo/logo3.png') }}" alt="branding logo" style="width: 100%;">
                                     @include('admin.partials.flash_message')
                                 </div>
                             </div>
@@ -91,26 +91,26 @@
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <!-- BEGIN VENDOR JS-->
-    <script src="{{ asset('public/assets/admin/vendors/js/vendors.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/vendors.min.js') }}"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/datatable/datatables.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/datatable/dataTables.buttons.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/datatable/buttons.bootstrap4.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/jszip.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/pdfmake.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/vfs_fonts.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/buttons.html5.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/buttons.print.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/vendors/js/tables/buttons.colVis.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/datatable/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/datatable/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/datatable/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/jszip.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendors/js/tables/buttons.colVis.min.js') }}"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN ROBUST JS-->
-    <script src="{{ asset('public/assets/admin/js/core/app-menu.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/core/app.min.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/scripts/customizer.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/core/app-menu.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/core/app.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/scripts/customizer.min.js') }}"></script>
     <!-- END ROBUST JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="{{ asset('public/assets/admin/js/scripts/tables/datatables-extensions/datatable-button/datatable-html5.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/scripts/tables/datatables-extensions/datatable-button/datatable-html5.min.js') }}"></script>
 
     <script>
         function myFunction() {
