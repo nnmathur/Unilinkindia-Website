@@ -8,10 +8,10 @@
         <section class="company-block pt-4">
 			<div class="company">
 				<div class="container">
-					<h2 class="text-center career-header">ABOUT COMPANY</h2>
+					<h2 class="text-center career-header common-title">ABOUT COMPANY</h2>
 					<div class="row align-items-center">
 						<div class="col-md-5">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic" />
+							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
 						</div>
 						<div class="col-md-7">
 							<h3>WHO WE ARE</h3>
@@ -20,7 +20,7 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-md-5 order-2">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic" />
+							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
 						</div>
 						<div class="col-md-7">
 							<h3>OUR GOAL</h3>
@@ -29,7 +29,7 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-md-5">
-							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic" />
+							<img src="{{ asset('/front1/images/industry1.png') }}" class="pic zoom" />
 						</div>
 						<div class="col-md-7">
 							<h3>WHAT WE DO</h3>
@@ -52,7 +52,7 @@
 									{{-- <img id="img-team" src="{{ asset('storage/app/public/team/' . $team->image) }}"
 										alt="{{ $team->name }}" class="pull-left" /> --}}
 									<img id="img-team" src="{{ asset('/front1/images/team/' . $team->image) }}"
-										alt="{{ $team->name }}" class="pull-left" />
+										alt="{{ $team->name }}" class="pull-left zoom" />
 								</div>
 								<div class="col-md-8 about-leadership">
 									<h4>{{ $team->name }}
@@ -73,19 +73,19 @@
 			<div class="company">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-md-4 text-center company-highlighted-text">
+						<div class="col-md-4 text-center company-highlighted-text zoom">
 							<h2 class="growing"><span>{{ $about->it_year }}+</span><br /><small>Years in Information
 									Technology</small></h2>
 						</div>
-						<div class="col-md-4 text-center company-highlighted-text">
+						<div class="col-md-4 text-center company-highlighted-text zoom">
 							<h2 class="fortune"><span>{{ $about->exp_year }}+</span><br /><small>Years of experienced
 									team</small></h2>
 						</div>
-						<div class="col-md-4 text-center company-highlighted-text">
+						<div class="col-md-4 text-center company-highlighted-text zoom">
 							<h2 class="strategic"><span>{{ $about->comp_project }}+</span><br /><small>Completed
 									projects</small></h2>
 						</div>
-						<div class="col-md-4 text-center company-highlighted-text">
+						<div class="col-md-4 text-center company-highlighted-text zoom">
 							<h2 class="customer"><span>{{ $about->cust_success }}%</span><br /><small>Customer
 									success</small></h2>
 						</div>

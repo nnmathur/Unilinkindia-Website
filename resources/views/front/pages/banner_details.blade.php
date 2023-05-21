@@ -129,7 +129,7 @@
         }
 
         .navbar-btn1 {
-            margin: 40px 0px 50px 0px;
+            margin: 0 0px 50px 0px;
             color: white;
             padding: 15px;
             background-color: blue;
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="video-block">
-                <iframe width="100%" height="430" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="100%" height="450" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -233,125 +233,143 @@
                     </div>
                 </div>
                 <div class="col-md-5 otherproduct-links">
-                    <div class="ol-box gradient-bg5">
-                        <h4><a href="#">Odoo ERP Consulting</a></h4>
+                    <div class="ol-box zoom gradient-bg gradient-bg5">
+                        <div class="br-inner">
+                            <h4><a href="#">Odoo ERP Consulting</a></h4>
+                        </div>
                     </div>
-                    <div class="ol-box gradient-bg2">
-                        <h4><a href="#">Software Export Solutions</a></h4>
+                    <div class="ol-box zoom gradient-bg gradient-bg2">
+                        <div class="br-inner">
+                            <h4><a href="#">Software Export Solutions</a></h4>
+                        </div>
                     </div>
-                    <div class="ol-box gradient-bg7">
-                        <h4><a href="#">Shopify E-commerce Development</a></h4>
+                    <div class="ol-box zoom gradient-bg gradient-bg7">
+                        <div class="br-inner">
+                            <h4><a href="#">Shopify E-commerce Development</a></h4>
+                        </div>
                     </div>
-                    <div class="ol-box gradient-bg8">
-                        <h4><a href="#">Laravel E-commerce Development</a></h4>
+                    <div class="ol-box zoom gradient-bg gradient-bg8">
+                        <div class="br-inner">
+                            <h4><a href="#">Laravel E-commerce Development</a></h4>
+                        </div>
                     </div>
-                    <div class="ol-box gradient-bg2">
-                        <h4>Other Development</h4>
-                        {{-- <ol class="list-unstyled">
-                            @foreach ($banners as $ban)
-                                <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02"
-                                        title="{{ $ban->title }}">{{ $ban->title }}</a></li>
-                            @endforeach
-                        </ol> --}}
+                    <div class="ol-box zoom gradient-bg gradient-bg2">
+                        <div class="br-inner">
+                            <h4>Other Development</h4>
+                            {{-- <ol class="list-unstyled">
+                                @foreach ($banners as $ban)
+                                    <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02"
+                                            title="{{ $ban->title }}">{{ $ban->title }}</a></li>
+                                @endforeach
+                            </ol> --}}
 
-                        <ol class="list-unstyled">
-                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting  </a></li>
-                            <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
-                                    Solutions </a></li>
-                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
-                                    Development </a></li>
-                            <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
-                                    Development</a></li>
-                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
-                            <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
-                                    Solutions</a></li>
-                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
-                                    Development</a></li>
-                            <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
-                                    Development</a></li>
-                        </ol>
+                            <ol class="list-unstyled">
+                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting  </a></li>
+                                <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
+                                        Solutions </a></li>
+                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
+                                        Development </a></li>
+                                <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
+                                        Development</a></li>
+                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
+                                <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
+                                        Solutions</a></li>
+                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
+                                        Development</a></li>
+                                <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
+                                        Development</a></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row story-block">
                 <div class="col-xs-12">
-                    <h3 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;"> The Success
+                    <h3 class="common-title" style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;"> The Success
                         Stories </h3>
                 </div>
                 <div class="col-md-7">
                     <div class="row mt-3 clspam-2">
                         <div class="col-md-6">
-                            <div class="features__item w-100">
-                                <div class="features__item__link gradient-bg1">
-                                    <h2 class="features__title">
-                                        ECOMMERCE PROJECTS
-                                    </h2>
-                                    <div class="features__content">
-                                        <p
-                                            style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                            Our professional team of talented and experienced developers is adept at
-                                            creating the right solutions based on your business needs.</p>
-                                    </div>
-                                    <div class="features__footer">
-                                        <a href="solutions.html">
-                                            See more </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="features__item w-100">
-                                <div class="features__item__link gradient-bg2">
-                                    <h2 class="features__title">
-                                        ECOMMERCE PROJECTS
-                                    </h2>
-                                    <div class="features__content">
-                                        <p
-                                            style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                            Our professional team of talented and experienced developers is adept at
-                                            creating the right solutions based on your business needs.</p>
-                                    </div>
-                                    <div class="features__footer">
-                                        <a href="solutions.html">
-                                            See more </a>
+                            <div class="features__item w-100 zoom gradient-bg gradient-bg1">
+                                <div class="br-inner">
+                                    <div class="features__item__link">
+                                        <h2 class="features__title">
+                                            ECOMMERCE PROJECTS
+                                        </h2>
+                                        <div class="features__content">
+                                            <p
+                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                                                Our professional team of talented and experienced developers is adept at
+                                                creating the right solutions based on your business needs.</p>
+                                        </div>
+                                        <div class="features__footer">
+                                            <a href="solutions.html">
+                                                See more </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features__item w-100">
-                                <div class="features__item__link gradient-bg3">
-                                    <h2 class="features__title">
-                                        ECOMMERCE PROJECTS
-                                    </h2>
-                                    <div class="features__content">
-                                        <p
-                                            style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                            Our professional team of talented and experienced developers is adept at
-                                            creating the right solutions based on your business needs.</p>
-                                    </div>
-                                    <div class="features__footer">
-                                        <a href="solutions.html">
-                                            See more </a>
+                            <div class="features__item w-100 zoom gradient-bg gradient-bg2">
+                                <div class="br-inner">
+                                    <div class="features__item__link">
+                                        <h2 class="features__title">
+                                            ECOMMERCE PROJECTS
+                                        </h2>
+                                        <div class="features__content">
+                                            <p
+                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                                                Our professional team of talented and experienced developers is adept at
+                                                creating the right solutions based on your business needs.</p>
+                                        </div>
+                                        <div class="features__footer">
+                                            <a href="solutions.html">
+                                                See more </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features__item w-100">
-                                <div class="features__item__link gradient-bg4">
-                                    <h2 class="features__title">
-                                        ECOMMERCE PROJECTS
-                                    </h2>
-                                    <div class="features__content">
-                                        <p
-                                            style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                            Our professional team of talented and experienced developers is adept at
-                                            creating the right solutions based on your business needs.</p>
+                            <div class="features__item w-100 zoom gradient-bg gradient-bg3">
+                                <div class="br-inner">
+                                    <div class="features__item__link">
+                                        <h2 class="features__title">
+                                            ECOMMERCE PROJECTS
+                                        </h2>
+                                        <div class="features__content">
+                                            <p
+                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                                                Our professional team of talented and experienced developers is adept at
+                                                creating the right solutions based on your business needs.</p>
+                                        </div>
+                                        <div class="features__footer">
+                                            <a href="solutions.html">
+                                                See more </a>
+                                        </div>
                                     </div>
-                                    <div class="features__footer">
-                                        <a href="solutions.html">
-                                            See more </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="features__item w-100 zoom gradient-bg gradient-bg4">
+                                <div class="br-inner">
+                                    <div class="features__item__link">
+                                        <h2 class="features__title">
+                                            ECOMMERCE PROJECTS
+                                        </h2>
+                                        <div class="features__content">
+                                            <p
+                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                                                Our professional team of talented and experienced developers is adept at
+                                                creating the right solutions based on your business needs.</p>
+                                        </div>
+                                        <div class="features__footer">
+                                            <a href="solutions.html">
+                                                See more </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -362,63 +380,71 @@
                 <div class="col-md-5 otherproduct-links desc-right-box mt-0">
                     <div class="row  mt-0">
                         <div class="col-md-6">
-                            <div class="ol-box gradient-bg5">
-                                <h4>Related Blogs</h4>
-                                <ol class="list-unstyled">
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                </ol>
+                            <div class="ol-box zoom gradient-bg gradient-bg5">
+                                <div class="br-inner">
+                                    <h4>Related Blogs</h4>
+                                    <ol class="list-unstyled">
+                                        <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                Consulting</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                Solutions</a></li>
+                                                <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                        Consulting</a></li>
+                                                <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                        Solutions</a></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box gradient-bg6">
-                                <h4>Case Studios</h4>
-                                <ol class="list-unstyled">
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                </ol>
+                            <div class="ol-box zoom gradient-bg gradient-bg6">
+                                <div class="br-inner">
+                                    <h4>Case Studios</h4>
+                                    <ol class="list-unstyled">
+                                        <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                Consulting</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                Solutions</a></li>
+                                                <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                        Consulting</a></li>
+                                                <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                        Solutions</a></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box gradient-bg7">
-                                <h4>Knowledge base</h4>
-                                <ol class="list-unstyled">
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                </ol>
+                            <div class="ol-box zoom gradient-bg gradient-bg7">
+                                <div class="br-inner">
+                                    <h4>Knowledge base</h4>
+                                    <ol class="list-unstyled">
+                                        <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                Consulting</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                Solutions</a></li>
+                                                <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                        Consulting</a></li>
+                                                <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                        Solutions</a></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="ol-box gradient-bg8">
-                                <h4>Documents</h4>
-                                <ol class="list-unstyled">
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                    <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
-                                            Consulting</a></li>
-                                    <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
-                                            Solutions</a></li>
-                                </ol>
+                            <div class="ol-box zoom gradient-bg gradient-bg8">
+                                <div class="br-inner">
+                                    <h4>Documents</h4>
+                                    <ol class="list-unstyled">
+                                        <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                Consulting</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                Solutions</a></li>
+                                                <li><a href="ht#/2" class="small02" title="Odoo ERP Consulting">Odoo ERP
+                                                        Consulting</a></li>
+                                                <li><a href="#" class="small02" title="Soft Expert Solutions">Soft Expert
+                                                        Solutions</a></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                     </div>
