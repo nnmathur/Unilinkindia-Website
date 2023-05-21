@@ -9,31 +9,31 @@
     <meta name="author" content="">
     <title>Admin Panel</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('public/front/images/logo/logo5.png') }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ asset('public/front/images/logo/logo5.png') }}">
+    <link rel="shortcut icon" href="{{ asset('front/images/logo/logo5.png') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('front/images/logo/logo5.png') }}">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/vendors.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/datatable/datatables.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/extensions/buttons.dataTables.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/tables/datatable/buttons.bootstrap4.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/vendors.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/datatable/datatables.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/extensions/buttons.dataTables.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/tables/datatable/buttons.bootstrap4.min.css') }}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN ROBUST CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/app.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/app.min.css') }}">
     <!-- END ROBUST CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/core/menu/menu-types/vertical-menu.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/core/colors/palette-gradient.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/calendars/fullcalendar.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/css/plugins/calendars/fullcalendar.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/pickers/pickadate/pickadate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/forms/selects/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/core/menu/menu-types/vertical-menu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/core/colors/palette-gradient.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/calendars/fullcalendar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/plugins/calendars/fullcalendar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/pickers/pickadate/pickadate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/forms/selects/select2.min.css') }}">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/style.css') }}">
     <!-- END Custom CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/admin/vendors/css/editors/summernote.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/vendors/css/editors/summernote.css') }}">
     <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)attachment(\s|$)/,"$1js$2")})(document,window,0);</script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
     <style type="text/css">
@@ -98,7 +98,7 @@
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row">
             <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
-            <li class="nav-item"><a class="navbar-brand" href="{{ route('auth.dashboard') }}"><img class="brand-logo" alt="robust admin logo" src="{{ asset('public/assets/admin/images/logo/logo-light-sm.png') }}">
+            <li class="nav-item"><a class="navbar-brand" href="{{ route('auth.dashboard') }}"><img class="brand-logo" alt="robust admin logo" src="{{ asset('assets/admin/images/logo/logo-light-sm.png') }}">
                 <h3 class="brand-text">Admin Panel</h3></a></li>
             <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
           </ul>
@@ -115,7 +115,7 @@
               </li>
             </ul>
             {{-- <ul class="nav navbar-nav float-right">   
-              <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="{{ asset('public/assets/admin/images/portrait/small/avatar-s-1.png') }}" alt="avatar"><i></i></span><span class="user-name">{{Auth::user()->name}}</span></a>
+              <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="{{ asset('assets/admin/images/portrait/small/avatar-s-1.png') }}" alt="avatar"><i></i></span><span class="user-name">{{Auth::user()->name}}</span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="{{ route('auth.users.profile') }}"><i class="ft-user"></i> My Profile</a>
                     <a class="dropdown-item" href="{{ route('change_passsword') }}"><i class="ft-check-square"></i> Change Password</a>

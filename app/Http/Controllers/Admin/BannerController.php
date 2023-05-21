@@ -13,7 +13,10 @@ class BannerController extends Controller
 {
     public function index()
     {
-        $content = Banner::orderBy('created_at', 'desc')->get();      
+        $content = Banner::orderBy('created_at', 'desc')->get();    
+
+        //dd($content->toArray());
+
         return view('admin.pages.banner.index')->with(['title'=>'Banner List', 'content'=>$content]);
     }
 
@@ -45,7 +48,7 @@ class BannerController extends Controller
             if($request->image->getClientOriginalName()){
                 $ext = $request->image->getClientOriginalExtension();
                 $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-                $request->image->storeAs('public/banner',$file);
+                $request->image->move(public_path('uploads/banner/'), $file);
             }
             else
             {
@@ -81,6 +84,7 @@ class BannerController extends Controller
        try
        {
            $bannerData = Banner::where('id', $bannerId)->get();
+
            
            if($bannerData->isEmpty())
            {

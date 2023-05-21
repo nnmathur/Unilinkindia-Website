@@ -104,9 +104,9 @@
 									                        <input type="file" name="image" id="imageUpload" class="hide"> 
 									                        <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 MB<br>
 									                        @if($bannerData->image)
-									                        <img src="{{ asset('storage/app/public/banner/'.$bannerData->image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+									                        <img src="{{ asset('storage/app/banner/'.$bannerData->image) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
 									                        @else
-									                        <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+									                        <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
 									                        @endif
 									                    </div>
 									                </div>
@@ -121,7 +121,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3"> Description <span class="text-danger">*</span> :</label>
                                                         <div class="col-md-9">      
-                                                            <textarea class="summernote" name="description">{{ $bannerData->description }}</textarea>
+                                                            <textarea class="ckeditor" name="description">{{ $bannerData->description }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -135,7 +135,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3"> Success Story <span class="text-danger">*</span> :</label>
                                                         <div class="col-md-9">      
-                                                            <textarea class="summernote" name="success_story">{{ $bannerData->success_story }}</textarea>
+                                                            <textarea class="ckeditor" name="success_story">{{ $bannerData->success_story }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -157,7 +157,7 @@
 							                        	<div class="col-md-9">
 									                        <input type="file" name="attachment" id="file-2" class="inputfile" data-multiple-caption="{count} files selected" multiple>
 									                        <label for="file-2" class="mr-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Select File</span></label><br><br>
-									                        <a href="{{ asset('storage/app/public/banner/'.$bannerData->attachment) }}" target="_blank">View Attachment</a>
+									                        <a href="{{ asset('storage/app/banner/'.$bannerData->attachment) }}" target="_blank">View Attachment</a>
 									                    </div>
 						                       		</div>
 						                       	</div>
