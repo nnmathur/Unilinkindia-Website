@@ -16,15 +16,10 @@
 		<link href="{{ asset('front1/css/getintouch.css') }}" rel="stylesheet">
 		<link href="{{ asset('front1/css/bootstrap.css') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu:400,700" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	
 	
 	<!-- IR Theme css -->
@@ -32,6 +27,8 @@
 	<link href="{{ asset('front1/css/unlmain.css') }}" rel="stylesheet">
 	<link href="{{ asset('front1/css/unilink.css') }}" rel="stylesheet">
 	<link href="{{ asset('front1/css/custom.css') }}" rel="stylesheet">
+	<link href="{{ asset('front1/css/unilinknew.css') }}" rel="stylesheet">
+
 	<!--<link href="{{ asset('public/front1/css/unilinknew.css') }}" rel="stylesheet">-->
 	
 	<style>
@@ -149,7 +146,7 @@
 					<nav class="navbar-default" role="navigation">
 						<div class="navbar-header">
 							<div class="logo pull-left">
-                            <a href="{{ route('home') }}" title="UnilinkIndia"><img id="logobig" src="{{ asset('public/front1/images/logo.png') }}" alt="UnilinkIndia" /><img id="logosmall" src="{{ asset('public/front1/images/logo2.png') }}" alt="UnilinkIndia" /></a>
+                            <a href="{{ route('home') }}" title="UnilinkIndia"><img id="logobig" src="{{ asset('front1/images/logo.png') }}" alt="UnilinkIndia" /><img id="logosmall" src="{{ asset('front1/images/logo2.png') }}" alt="UnilinkIndia" /></a>
                           	</div>							
 						</div>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" id="toggle">

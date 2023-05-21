@@ -121,12 +121,6 @@
     }
 </style>
 
-<link href="{{ asset('public/front1/css/unilinknew.css') }}" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
     	<div class="Container-image" style="background-image:url(images/Accordion/Accimg1.jpg); background-repeat:no-repeat;"></div>	
 		
 		<div class="Container-image1" id="carouselcontainer">
@@ -143,7 +137,7 @@
 						    @foreach($banners as $banner)
                                 <div class="item <?php if($banner->id == '4'){ echo 'active text-center'; } ?>">
                                     <div class="col-sm-12 col-md-12 client" style="position:relative;">
-                                        <img class="img-responsive" src="{{asset('storage/app/public/banner/'.$banner->image)}}" alt="Image">
+                                        <img class="img-responsive" src="{{asset('uploads/banner/'.$banner->image)}}" alt="Image">
                                         <div id="minibox" class="col-sm-3 col-md-3" style="position:absolute; top:40px;left:30px;">
                                             <h1 class="miniacch1" style="opacity:1;">{{$banner->title}}</h1>
                                             <p class="miniaccp">{{$banner->short_description}}
@@ -183,7 +177,7 @@
                         <div class="accordion-title">
                             <span>{{ $banner->title }}</span>
                         </div>
-                        <div class="accordion-content" style="background-image:url({{asset('storage/app/public/banner/'.$banner->image)}})">
+                        <div class="accordion-content" style="background-image:url({{asset('uploads/banner/'.$banner->image)}})">
                             <div class="transbox">
                                 <h1 class="acch1" style="opacity:1;">{{ $banner->title }}</h1>
                                 <p class="accp">{{ $banner->short_description }}
@@ -370,50 +364,41 @@
             <div class="row">
                 <h2 class="text-center" id="clientheading" style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">Our Clients</h2>
                 <div class="col-sm-12 col-md-12">
-                    <section class="customer-logos slider">
-                        @foreach($clients as $client)
-                            <div class="slide">
-                                <img class="img-responsive" src="{{asset('storage/app/public/clients/'.$client->image)}}" alt="{{$client->title}}">
+                            
+                                <div id="carousel-feedback" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+		  								@foreach($clients as $photo)
+		    								<li data-target="#carousel-feedback" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+		 								 @endforeach
+										</ol>
+                                    <div class="carousel-inner">
+                                    <div class="item text-center active">
+                                    
+                                    
+                         		 @foreach($clients as $client)
+ 
+                                    <div class="item image {{ $loop->first ? ' active' : '' }}">  
+                                    <div class="col-sm-2 col-md-1 client"></div>
+                                    <div class="col-sm-2 col-md-2 client"><img src="{{asset('uploads/clients/'.$client->image)}}" alt="{{$client->title}}" class="img-responsive"></div>
+                                    
+                                    </div>
+                                @endforeach
+                                </div>
+                                <div align="center">
+                                <!-- Controls -->
+                                      <a class="left" href="#carousel-feedback" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                      </a>
+                                      <a class="right" href="#carousel-feedback" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                      </a>
+                                </div>
+                                </div>
                             </div>
-                        @endforeach
-                    </section>
-                </div>
                 <div class="clear"></div>
             </div>
         </div>
     </article>
-    <script> 
-        $(document).ready(function(){
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
-        });
-
-        $(document).ready(function(){
-          $("#toggle").click(function(){
-        	$(".top-navigation").slideToggle("slow",function ()
-        	{
-        	   $("#textMsg").text("Slide Down completed.");
-        	});
-          });
-        });
-    </script>
 
 @endsection

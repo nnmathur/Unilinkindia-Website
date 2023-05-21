@@ -38,7 +38,8 @@ class ClientController extends Controller
             if($request->image){
               $ext = $request->image->getClientOriginalExtension();
               $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-              $request->image->storeAs('public/clients',$file);
+             // $request->image->storeAs('public/clients',$file);
+              $request->image->move(public_path('/uploads/clients/'), $file);
             }
             else
             {
@@ -106,7 +107,8 @@ class ClientController extends Controller
           if(isset($request->image) && $request->image->getClientOriginalName()){
             $ext = $request->image->getClientOriginalExtension();
             $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-            $request->image->storeAs('public/clients',$file);
+            //$request->image->storeAs('public/clients',$file);
+            $request->image->move(public_path('/uploads/clients/'), $file);
           }
           else
           {

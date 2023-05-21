@@ -34,7 +34,7 @@
 </footer>
 		
 
-    <script src="js/jquery.min.js"></script>
+    <script src="{{ asset('front1/js/jquery.min.js') }}"></script>
     
     <script src="{{ asset('front1/js/bootstrap.js') }}" type="text/javascript"></script>    
     <script src="{{ asset('front1/js/jquery.validate.js') }}" type="text/javascript"></script>
@@ -71,6 +71,38 @@ s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.
   });
 });
   </script>
+    <script> 
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
 
+        $(document).ready(function(){
+          $("#toggle").click(function(){
+        	$(".top-navigation").slideToggle("slow",function ()
+        	{
+        	   $("#textMsg").text("Slide Down completed.");
+        	});
+          });
+        });
+    </script>
 
 </html>

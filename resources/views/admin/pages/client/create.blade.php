@@ -65,7 +65,7 @@
                                                         <div class="col-md-9">
                                                           <input type="file" name="image" id="imageUpload" class="hide"> 
                                                           <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
-                                                          <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                          <img src="{{ asset('assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
                                                       </div>
                                                     </div>
                                                 </div>

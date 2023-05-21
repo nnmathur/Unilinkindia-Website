@@ -50,7 +50,7 @@
 <section class="features" style="background:#DCDCDC;margin:0 auto;">
 	<h2 style="font-family:GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;"> OUR CLIENTS</h2>
     @foreach($clients as $client)
-    	<div class="col-sm-3 col-md-3" id="clientdiv"> <img src="{{ asset('storage/app/public/clients/'.$client->image) }}">
+    	<div class="col-sm-3 col-md-3" id="clientdiv"> <img src="{{ asset('uploads/clients/'.$client->image) }}">
     		<p class="clientp">{{ $client->title }}</p>
     	</div>
     @endforeach

@@ -76,7 +76,7 @@
                                                   <input type="file" name="image" id="imageUpload" class="hide"> 
                                                   <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
                                                   @if($userData->image)
-                                                    <img src="{{ asset('storage/app/public/clients/'. $userData->image) }}" style="width: 200px; height: 200px;">
+                                                    <img src="{{ asset('uploads/clients/'. $userData->image) }}" style="width: 200px; height: 200px;">
                                                   @else
                                                     <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
                                                   @endif
