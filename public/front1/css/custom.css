@@ -317,11 +317,13 @@ article .row h2 {
     font-size: 16px;
 }
 
-.content ul {
+.content ul,
+.content ol {
     padding: 0;
 }
 
-.content ul li {
+.content ul li,
+.content ol li {
     font-weight: 300;
     line-height: 24px;
     font-size: 16px;
@@ -332,7 +334,8 @@ article .row h2 {
     padding-left: 28px;
 }
 
-.content ul li:before {
+.content ul li:before,
+.content ol li:before {
     content: "";
     position: absolute;
     left: 0;

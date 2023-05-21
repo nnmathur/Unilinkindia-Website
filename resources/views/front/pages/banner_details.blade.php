@@ -208,27 +208,9 @@
                         <?php //echo $banner->description;
                         ?>
                         <div class="content">
-                            <ul>
-                                <li>The system manages organization expenses through well-defined ‘Authority Norms’.</li>
-                                <li>Offers controls through ‘Centralized and Cost Center based budgets'.</li>
-                                <li>Up-to 8 Tier Approval Matrix for each transaction.</li>
-                                <li>Work-flows based on Monitory controls</li>
-                                <li>Offers Unlimited Branches and Zonal office controls.</li>
-                                <li>Separate Approval Matrix for Branch Office/Zonal Office and Head Office.</li>
-                                <li>Comprehensive Contract Management.</li>
-                                <li>Employee Based Expense Management.
-                                    <ul>
-                                        <li>Travel Expenses</li>
-                                        <li>Personal Advances, Adjustments & Reimbusements</li>
-                                        <li>Current Working Expenses</li>
-                                        <li>Medical Expenses</li>
-                                </li>
-                            </ul>
-                            </li>
-                            <li>CAPEX – Capital Goods & Services Purchase</li>
-                            </ul>
-                            <p>The system is a browser based application which can be used on a cloude installation or on a
-                                central server which has organization wide usage.</p>
+                            <?php //echo $banner->description;
+                        ?>
+                        {!! $banner->description !!}
                         </div>
                     </div>
                 </div>
