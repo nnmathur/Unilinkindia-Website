@@ -175,21 +175,25 @@
             </div>
         </div>
     </section>--}}
-    <section class="gradient-banner">
-        <div class="container">
+    <section class="gradient-banner ps-2 pe-2">
+        <div class="">
             <div class="row">
-                <div class="col-md-5 align-items-center gh-box">
-                    <div>
-                        <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                        {{ $banner->title }} </h2>
-                        <div class="content">
-                            <p>{{ $banner->short_description }}</p>
+                <div class="col-md-6 align-items-center gh-box">
+                    <div class="row">
+                        <div class="col-md-9 col-md-offset-3">
+                            <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                            {{ $banner->title }} </h2>
+                            <div class="content">
+                                <p>{{ $banner->short_description }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="video-block">
-                <iframe width="100%" height="450" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="col-md-6">
+                    <div class="video-block">
+                        <iframe width="100%" height="450" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

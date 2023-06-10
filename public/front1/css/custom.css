@@ -322,13 +322,13 @@ article .row h2 {
     font-size: 16px;
 }
 
-.content ul,
-.content ol {
+.content>ul,
+.content>ol {
     padding: 0;
 }
 
-.content ul li,
-.content ol li {
+.content>ul>li,
+.content>ol>li {
     font-weight: 300;
     line-height: 24px;
     font-size: 16px;
@@ -339,8 +339,8 @@ article .row h2 {
     padding-left: 28px;
 }
 
-.content ul li:before,
-.content ol li:before {
+.content>ul>li:before,
+.content>ol>li:before {
     content: "";
     position: absolute;
     left: 0;
@@ -377,6 +377,7 @@ article .row h2 {
 .gradient-banner h2 {
     color: #fff;
     margin-top: 0;
+    line-height: normal;
 }
 
 .gradient-banner .content {
@@ -389,10 +390,7 @@ article .row h2 {
 }
 
 .video-block {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 750px;
+    width: 100%;
     background: #333;
     padding: 15px 15px;
     border-radius: 15px;
