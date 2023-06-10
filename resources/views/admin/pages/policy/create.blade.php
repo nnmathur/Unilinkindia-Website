@@ -6,13 +6,13 @@
       <div class="content-wrapper">
         <div class="content-header row">
           <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
-            <h3 class="content-header-title mb-0 d-inline-block">Policies</h3>
+            <h3 class="content-header-title mb-0 d-inline-block">Portfolio</h3>
             <div class="row breadcrumbs-top d-inline-block">
               <div class="breadcrumb-wrapper col-12">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="{{ route('auth.dashboard') }}">Home</a>
                   </li>
-                  <li class="breadcrumb-item"><a href="{{ route('auth.policies.create') }}">Add Policies</a>
+                  <li class="breadcrumb-item"><a href="{{ route('auth.policies.create') }}">Add Portfolio</a>
                   </li>
                   <li class="breadcrumb-item active">Data
                   </li>
@@ -28,7 +28,7 @@
 					<div class="col-md-12">
 				        <div class="card">
 				            <div class="card-header">
-				                <h4 class="card-title" id="horz-layout-colored-controls">Policies</h4>
+				                <h4 class="card-title" id="horz-layout-colored-controls">Portfolio</h4>
 				                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
 			        			<div class="heading-elements">
 				                    <ul class="list-inline mb-0">
@@ -47,7 +47,7 @@
 										@csrf()
 										@if(!empty($method)) @method($method) @endif
                                         <div class="form-body">
-                                        	<h4 class="form-section"><i class="fa fa-eye"></i> About Policies</h4>
+                                        	<h4 class="form-section"><i class="fa fa-eye"></i> About Portfolio</h4>
                                         	<div class="row">
                                         		<div class="col-md-12">
                                                     <div class="form-group row">
@@ -135,7 +135,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3"> Description <span class="text-danger">*</span> :</label>
                                                         <div class="col-md-9">      
-                                                            <textarea class="summernote" name="description"></textarea>
+                                                            <textarea class="ckeditor" name="description"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>

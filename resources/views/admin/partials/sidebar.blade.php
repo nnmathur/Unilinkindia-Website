@@ -54,12 +54,12 @@
             </ul>
           </li>
 
-          <li class=" navigation-header"><span data-i18n="nav.category.layouts">Policies</span><i class="ft-more-horizontal ft-minus" data-toggle="tooltip" data-placement="right" data-original-title="Layouts"></i>
+          <li class=" navigation-header"><span data-i18n="nav.category.layouts">Portfolio</span><i class="ft-more-horizontal ft-minus" data-toggle="tooltip" data-placement="right" data-original-title="Layouts"></i>
           </li>
-          <li class=" nav-item"><a href="#"><i class="icon-layers"></i><span class="menu-title" data-i18n="nav.page_layouts.main">Policies</span></a>
+          <li class=" nav-item"><a href="#"><i class="icon-layers"></i><span class="menu-title" data-i18n="nav.page_layouts.main">Portfolio</span></a>
             <ul class="menu-content">
-              <li class="{{ Request::routeIs('auth.policies.create') ? 'active' : '' }}"><a class="menu-item" href="{{ route('auth.policies.create') }}" data-i18n="nav.page_layouts.1_column">Add Policies</a></li>
-              <li class="{{ Request::routeIs('auth.policies.index') ? 'active' : '' }}"><a class="menu-item" href="{{ route('auth.policies.index') }}" data-i18n="nav.page_layouts.1_column">Show Policies</a></li>
+              <li class="{{ Request::routeIs('auth.policies.create') ? 'active' : '' }}"><a class="menu-item" href="{{ route('auth.policies.create') }}" data-i18n="nav.page_layouts.1_column">Add Portfolio</a></li>
+              <li class="{{ Request::routeIs('auth.policies.index') ? 'active' : '' }}"><a class="menu-item" href="{{ route('auth.policies.index') }}" data-i18n="nav.page_layouts.1_column">Show Portfolio</a></li>
             </ul>
           </li>
 

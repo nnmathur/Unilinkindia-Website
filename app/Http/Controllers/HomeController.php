@@ -71,9 +71,11 @@ class HomeController extends Controller
     
     public function bannerdetails(Request $request, $id)
     {
+
+        $portfolios = Policy::latest()->take(4)->get();
         $banner = Banner::where('id', $id)->first();
         $banners = Banner::where('id', '!=', '4')->where('id', '!=', $id)->orderBy('id', 'desc')->get();
-        return view('front.pages.banner_details')->with(['title'=>'Details Page', 'banner'=>$banner, 'banners'=>$banners]);
+        return view('front.pages.banner_details')->with(['title'=>'Details Page', 'banner'=>$banner, 'banners'=>$banners,'portfolios'=>$portfolios]);
     }
 
     public function blogdetails(Request $request, $slug)

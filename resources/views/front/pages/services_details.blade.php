@@ -3,7 +3,7 @@
 @section('content')
 
 	<section class="header-spacing">
-		<div class="services-banner text-center" style="background: url({{ asset('storage/app/public/services/'.$services->image) }});">
+		<div class="services-banner text-center" style="background: url({{ asset('uploads/services/'.$services->image) }});">
 		</div>
 	</section>
 	<article class="solutions-container">

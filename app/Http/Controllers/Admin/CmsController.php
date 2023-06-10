@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Exception;
 use App\HomePage;
 use App\AboutPage;
+use App\Banner;
 use Illuminate\Support\Str;
 
 class CmsController extends Controller
@@ -261,6 +262,7 @@ class CmsController extends Controller
     public function updateabout(Request $request)
     {
 
+
       $about_page = AboutPage::find(1);
 
 
@@ -279,6 +281,17 @@ class CmsController extends Controller
                 $file3 = date('YmdHis').rand(1,99999).'.'.$ext3;     
                 $request->our_global_image->move(public_path('uploads/about-us/'), $file3);
         }
+       if(isset($request->home_banner) && $request->home_banner->getClientOriginalName()){
+                $ext4 = $request->home_banner->getClientOriginalExtension();
+                $file4 = date('YmdHis').rand(1,99999).'.'.$ext4;     
+                //$request->home_banner->move(public_path('uploads/about-us/'), $file4);
+                $request->home_banner->move(public_path('uploads/banner/'), $file4);
+
+                $banner =  Banner::where('title','Unilink Software Pvt. Ltd.')->first();
+                $banner->image = $file4;
+                $banner->save();
+        }
+
 
         try 
         { 
@@ -295,6 +308,7 @@ class CmsController extends Controller
                 'who_we_are_image' => isset($file1) ? $file1 :$about_page->who_we_are_image,
                 'what_we_do_image' => isset($file2) ? $file2 :$about_page->what_we_do_image,
                 'our_global_image' => isset($file3) ? $file3 :$about_page->our_global_image,
+                'home_banner' => isset($file4 ) ? $file4  :$about_page->home_banner,
             ];
          
             $rs = AboutPage::where(['id'=> '1'])->update($data);

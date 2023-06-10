@@ -42,7 +42,7 @@ class ServiceController extends Controller
             if($request->image->getClientOriginalName()){
                 $ext = $request->image->getClientOriginalExtension();
                 $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-                $request->image->storeAs('public/services',$file);
+                $request->image->move(public_path('uploads/services/'), $file);
             }
             else
             {
@@ -115,7 +115,7 @@ class ServiceController extends Controller
             if(isset($request->image) && $request->image->getClientOriginalName()){
                 $ext = $request->image->getClientOriginalExtension();
                 $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-                $request->image->storeAs('public/services',$file);
+                $request->image->move(public_path('uploads/services/'), $file);
             }
             else
             {

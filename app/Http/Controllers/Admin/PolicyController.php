@@ -45,7 +45,7 @@ class PolicyController extends Controller
             if($request->image){
               $ext = $request->image->getClientOriginalExtension();
               $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-              $request->image->storeAs('public/policy',$file);
+              $request->image->move(public_path('/uploads/policy/'), $file);
             }
             else
             {
@@ -55,7 +55,7 @@ class PolicyController extends Controller
             if($request->image1){
               $ext = $request->image1->getClientOriginalExtension();
               $file1 = date('YmdHis').rand(1,99999).'.'.$ext;     
-              $request->image1->storeAs('public/policy',$file1);
+              $request->image1->move(public_path('/uploads/policy/'), $file1);
             }
             else
             {
@@ -65,7 +65,7 @@ class PolicyController extends Controller
             if($request->image2){
               $ext = $request->image2->getClientOriginalExtension();
               $file2 = date('YmdHis').rand(1,99999).'.'.$ext;     
-              $request->image2->storeAs('public/policy',$file2);
+              $request->image2->move(public_path('/uploads/policy/'), $file2);
             }
             else
             {
@@ -75,7 +75,7 @@ class PolicyController extends Controller
               if($request->video){
                 $ext = $request->video->getClientOriginalExtension();
                 $file3 = date('YmdHis').rand(1,99999).'.'.$ext;     
-                $request->video->storeAs('public/video',$file3);
+                $request->video->move(public_path('/uploads/policy/'), $file3);
               }
               else
               {
@@ -162,7 +162,7 @@ class PolicyController extends Controller
           if(isset($request->image) && $request->image->getClientOriginalName()){
             $ext = $request->image->getClientOriginalExtension();
             $file = date('YmdHis').rand(1,99999).'.'.$ext;     
-            $request->image->storeAs('public/policy',$file);
+             $request->image->move(public_path('/uploads/policy/'), $file);
           }
           else
           {
@@ -180,7 +180,8 @@ class PolicyController extends Controller
           if(isset($request->image1) && $request->image1->getClientOriginalName()){
             $ext = $request->image1->getClientOriginalExtension();
             $file1 = date('YmdHis').rand(1,99999).'.'.$ext;     
-            $request->image1->storeAs('public/policy',$file1);
+            $request->image1->move(public_path('/uploads/policy/'), $file1);
+
           }
           else
           {
@@ -198,7 +199,7 @@ class PolicyController extends Controller
           if(isset($request->image2) && $request->image2->getClientOriginalName()){
             $ext = $request->image2->getClientOriginalExtension();
             $file2 = date('YmdHis').rand(1,99999).'.'.$ext;     
-            $request->image2->storeAs('public/policy',$file2);
+            $request->image2->move(public_path('/uploads/policy/'), $file2);
           }
           else
           {
@@ -216,7 +217,7 @@ class PolicyController extends Controller
             if(isset($request->video) && $request->video->getClientOriginalName()){
                 $ext = $request->video->getClientOriginalExtension();
                 $file3 = date('YmdHis').rand(1,99999).'.'.$ext;     
-                $request->video->storeAs('public/video',$file3);
+                $request->video->move(public_path('/uploads/policy/'), $file3);
             }
             else
             {

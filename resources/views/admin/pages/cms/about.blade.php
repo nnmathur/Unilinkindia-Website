@@ -60,7 +60,7 @@
                                             <div class="col-md-9">      
                                                 <input type="file" name="home_banner" class="form-control" accept="image/jpeg, image/png,image/jpg"/>
                                                 @if($aboutData->home_banner)
-                                                    <img src="{{ asset('uploads/about-us/'.$aboutData->home_banner) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                    <img src="{{ asset('uploads/banner/'.$aboutData->home_banner) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
                                                 @endif
                                             </div>
                                     </div>

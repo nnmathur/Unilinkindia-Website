@@ -272,6 +272,29 @@
                 </div>
                 <div class="col-md-7">
                     <div class="row mt-3 clspam-2">
+                        @forelse($portfolios as $portfolio)
+                        <div class="col-md-6">
+                            <div class="features__item w-100 zoom theme-blue gradient-bg1">
+                                <div class="br-inner">
+                                    <div class="features__item__link">
+                                        <h2 class="features__title">
+                                           {{$portfolio->title}}
+                                        </h2>
+                                        <div class="features__content">
+                                            <p
+                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                                                {{$portfolio->short_description}}
+                                             </p>
+                                        </div>
+                                        <div class="features__footer">
+                                            <a href="{{route('portfolio-show').'/'.$portfolio->services}}">
+                                                See more </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @empty
                         <div class="col-md-6">
                             <div class="features__item w-100 zoom theme-blue gradient-bg1">
                                 <div class="br-inner">
@@ -293,69 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="features__item w-100 zoom theme-blue gradient-bg2">
-                                <div class="br-inner">
-                                    <div class="features__item__link">
-                                        <h2 class="features__title">
-                                            ECOMMERCE PROJECTS
-                                        </h2>
-                                        <div class="features__content">
-                                            <p
-                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                                Our professional team of talented and experienced developers is adept at
-                                                creating the right solutions based on your business needs.</p>
-                                        </div>
-                                        <div class="features__footer">
-                                            <a href="solutions.html">
-                                                See more </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="features__item w-100 zoom theme-blue gradient-bg3">
-                                <div class="br-inner">
-                                    <div class="features__item__link">
-                                        <h2 class="features__title">
-                                            ECOMMERCE PROJECTS
-                                        </h2>
-                                        <div class="features__content">
-                                            <p
-                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                                Our professional team of talented and experienced developers is adept at
-                                                creating the right solutions based on your business needs.</p>
-                                        </div>
-                                        <div class="features__footer">
-                                            <a href="solutions.html">
-                                                See more </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="features__item w-100 zoom theme-blue gradient-bg4">
-                                <div class="br-inner">
-                                    <div class="features__item__link">
-                                        <h2 class="features__title">
-                                            ECOMMERCE PROJECTS
-                                        </h2>
-                                        <div class="features__content">
-                                            <p
-                                                style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                                                Our professional team of talented and experienced developers is adept at
-                                                creating the right solutions based on your business needs.</p>
-                                        </div>
-                                        <div class="features__footer">
-                                            <a href="solutions.html">
-                                                See more </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforelse
                     </div>
                 </div>
 

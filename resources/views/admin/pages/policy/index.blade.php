@@ -9,13 +9,13 @@
     <div class="content-wrapper">
         <div class="content-header row">
           <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
-            <h3 class="content-header-title mb-0 d-inline-block">Policies</h3>
+            <h3 class="content-header-title mb-0 d-inline-block">Portfolio</h3>
             <div class="row breadcrumbs-top d-inline-block">
               <div class="breadcrumb-wrapper col-12">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="{{ route('auth.dashboard') }}">Home</a>
                   </li>
-                  <li class="breadcrumb-item"><a href="{{ route('auth.policies.index') }}">Policies List</a>
+                  <li class="breadcrumb-item"><a href="{{ route('auth.policies.index') }}">Portfolio List</a>
                   </li>
                   <li class="breadcrumb-item active">Data
                   </li>
@@ -39,7 +39,7 @@
 	      		<div class="col-12">
 	      			<div class="card">
 	      				<div class="card-header">
-	      					<h4 class="card-title">Policies List</h4>
+	      					<h4 class="card-title">Portfolio List</h4>
 	      					<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
 	      					<div class="heading-elements">
 	      						<ul class="list-inline mb-0">
@@ -74,7 +74,8 @@
 												<td>{{ $u->title }}</td>
 												<td>
 													@if($u->image)
-									                    <img src="{{ env('APP_URL')}}/storage/app/public/policy/{{ $u->image }}" style="width: 100px; height: 70px;">
+													
+									                    <img src="{{ asset('uploads/policy/'.$u->image) }}" style="width: 100px; height: 70px;">
 									                  @else
 									                    <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" style="width: 100px; height: 70px;" alt="Your image will appear here.">
 									                  @endif

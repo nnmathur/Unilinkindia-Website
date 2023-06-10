@@ -183,7 +183,7 @@ $userId= Auth::user()->id;
                                             <div class="form-group row">
                                                 <label class="col-md-3 label-control" for="userinput3"> Description <span class="text-danger">*</span> :</label>
                                                 <div class="col-md-9">      
-                                                    <textarea class="summernote" name="description">{{ $description }}</textarea>
+                                                    <textarea class="ckeditor" name="description">{{ $description }}</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -196,7 +196,8 @@ $userId= Auth::user()->id;
                                                   <input type="file" name="image1" id="imageUpload" class="hide"> 
                                                   <label for="imageUpload" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
                                                   @if(trim($image1))
-                                                    <img src="{{ env('APP_URL')}}/storage/app/public/policy/{{ trim($image1) }}" style="width: 100%; height: 300px;">
+
+                                                    <img src="{{ asset('uploads/policy/'.trim($image1)) }}" style="width: 100%; height: 300px;">
                                                   @else
                                                     <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
                                                   @endif
@@ -212,7 +213,8 @@ $userId= Auth::user()->id;
                                                   <input type="file" name="image2" id="imageUpload1" class="hide"> 
                                                   <label for="imageUpload1" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
                                                   @if(trim($image2))
-                                                    <img src="{{ env('APP_URL')}}/storage/app/public/policy/{{ trim($image2) }}" style="width: 100%; height: 300px;">
+
+                                                    <img src=" {{ asset('uploads/policy/'.trim($image2)) }}" style="width: 100%; height: 300px;">
                                                   @else
                                                     <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview1" class="organisation-logo" alt="Your image will appear here.">
                                                   @endif
@@ -228,7 +230,7 @@ $userId= Auth::user()->id;
                                                   <input type="file" name="image" id="imageUpload2" class="hide"> 
                                                   <label for="imageUpload2" class="upload-poster mr-5">Select file</label> Max Size 2 mb<br>
                                                   @if(trim($image))
-                                                    <img src="{{ env('APP_URL')}}/storage/app/public/policy/{{ trim($image) }}" style="width: 100%; height: 300px;">
+                                                    <img src=" {{ asset('uploads/policy/'.trim($image)) }}" style="width: 100%; height: 300px;">
                                                   @else
                                                     <img src="{{ asset('public/assets/admin/images/dummy-logo.jpg')}}" id="imagePreview2" class="organisation-logo" alt="Your image will appear here.">
                                                   @endif
@@ -245,7 +247,8 @@ $userId= Auth::user()->id;
 							                        <input type="file" name="video" id="file-2" class="inputfile" data-multiple-caption="{count} files selected" accept="video/*">
 							                        <label for="file-2" class="mr-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Select File</span></label>
 							                        <video width="100%" height="385px" style="margin-top: 20px;" controls>
-													  <source src="../../../storage/app/public/video/{{ trim($video) }}" type="video/mp4">
+                                         
+													  <source src="{{ asset('uploads/policy/'.trim($video)) }}" type="video/mp4">
 													</video>
 							                    </div>
 							                </div>

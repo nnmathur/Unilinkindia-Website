@@ -109,7 +109,7 @@ $userId= Auth::user()->id;
             <div class="form-group row">
                 <label class="col-md-3 label-control" for="userinput3"> Description <span class="text-danger">*</span> :</label>
                 <div class="col-md-9">      
-                    <textarea class="summernote" name="description">{{ $description }}</textarea>
+                    <textarea class="ckeditor" name="description">{{ $description }}</textarea>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@ $userId= Auth::user()->id;
 
                     @if(trim($image))
 
-                    <img src="{{ asset('storage/app/public/services/'.$image) }}" class="organisation-logo">
+                    <img src="{{ asset('uploads/services/'.$image) }}" class="organisation-logo">
 
                     @else
 

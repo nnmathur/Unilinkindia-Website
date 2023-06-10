@@ -43,6 +43,9 @@ Route::get('/snapshot', 'InsightController@snapshot')->name('sanapshot');
 Route::get('/utilities', 'InsightController@utilities')->name('utilities');
 Route::get('/utilitidetails/{id}', 'InsightController@utilitidetails');
 Route::get('/csrInsight', 'InsightController@csrInsight')->name('csrInsight');
+Route::get('/portfolio-show/{id?}', 'PortfolioController@show')->name('portfolio-show');
+Route::get('/portfolio/{slug?}', 'PortfolioController@portfolioShow')->name('portfolio');
+Route::get('/portfolio-details/{slug?}', 'PortfolioController@portfolioDetails')->name('portfolio-details');
    
 Route::group(['prefix'=>'administrator', 'namespace'=>'Admin', 'middleware'=>['web']], function(){
     
