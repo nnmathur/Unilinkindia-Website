@@ -178,7 +178,7 @@
     <section class="gradient-banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-items-center gh-box">
+                <div class="col-md-5 align-items-center gh-box">
                     <div>
                         <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
                         {{ $banner->title }} </h2>
@@ -196,72 +196,68 @@
 
     <article>
         <div class="container product-details solution-details">
-            <div class="row pt-30" id="top">
-                <div class="col-md-8">
-                    <div class="dtl-content">
-                        {{-- <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
-                            {{ $banner->title }} </h2>
-                        <div class="content">
-                            <p>{{ $banner->short_description }}</p>
-                        </div> --}}
+            <div class="pt-30" id="top">
+                <div class="dtl-content">
+                    {{-- <h2 style="font-family: 'GothamRnd-Light', 'GothamRnd-Medium', Arial, Tahoma, Verdana;">
+                        {{ $banner->title }} </h2>
+                    <div class="content">
+                        <p>{{ $banner->short_description }}</p>
+                    </div> --}}
 
-                        <?php //echo $banner->description;
-                        ?>
-                        <div class="content">
-                            <?php //echo $banner->description;
-                        ?>
+                    <?php //echo $banner->description;
+                    ?>
+                    <div class="content">
+                        <div class="otherproduct-links">
+                            <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg5">
+                                <div class="br-inner">
+                                    <h4><a href="#">Odoo ERP Consulting</a></h4>
+                                </div>
+                            </div>
+                            <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg2">
+                                <div class="br-inner">
+                                    <h4><a href="#">Software Export Solutions</a></h4>
+                                </div>
+                            </div>
+                            <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg7">
+                                <div class="br-inner">
+                                    <h4><a href="#">Shopify E-commerce Development</a></h4>
+                                </div>
+                            </div>
+                            <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg8">
+                                <div class="br-inner">
+                                    <h4><a href="#">Laravel E-commerce Development</a></h4>
+                                </div>
+                            </div>
+                            <div class="ol-box ol-box-oneline zoom gradient-bg-red">
+                                <div class="br-inner">
+                                    <h4>Other Development</h4>
+                                    {{-- <ol class="list-unstyled">
+                                        @foreach ($banners as $ban)
+                                            <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02"
+                                                    title="{{ $ban->title }}">{{ $ban->title }}</a></li>
+                                        @endforeach
+                                    </ol> --}}
+        
+                                    <ol class="list-unstyled">
+                                        <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting  </a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
+                                                Solutions </a></li>
+                                        <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
+                                                Development </a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
+                                                Development</a></li>
+                                        <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
+                                                Solutions</a></li>
+                                        <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
+                                                Development</a></li>
+                                        <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
+                                                Development</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
                         {!! $banner->description !!}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 otherproduct-links">
-                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg5">
-                        <div class="br-inner">
-                            <h4><a href="#">Odoo ERP Consulting</a></h4>
-                        </div>
-                    </div>
-                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg2">
-                        <div class="br-inner">
-                            <h4><a href="#">Software Export Solutions</a></h4>
-                        </div>
-                    </div>
-                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg7">
-                        <div class="br-inner">
-                            <h4><a href="#">Shopify E-commerce Development</a></h4>
-                        </div>
-                    </div>
-                    <div class="ol-box ol-box-oneline zoom theme-blue gradient-bg8">
-                        <div class="br-inner">
-                            <h4><a href="#">Laravel E-commerce Development</a></h4>
-                        </div>
-                    </div>
-                    <div class="ol-box ol-box-oneline zoom gradient-bg-red">
-                        <div class="br-inner">
-                            <h4>Other Development</h4>
-                            {{-- <ol class="list-unstyled">
-                                @foreach ($banners as $ban)
-                                    <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02"
-                                            title="{{ $ban->title }}">{{ $ban->title }}</a></li>
-                                @endforeach
-                            </ol> --}}
-
-                            <ol class="list-unstyled">
-                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting  </a></li>
-                                <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
-                                        Solutions </a></li>
-                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
-                                        Development </a></li>
-                                <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
-                                        Development</a></li>
-                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
-                                <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
-                                        Solutions</a></li>
-                                <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
-                                        Development</a></li>
-                                <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
-                                        Development</a></li>
-                            </ol>
-                        </div>
                     </div>
                 </div>
             </div>
