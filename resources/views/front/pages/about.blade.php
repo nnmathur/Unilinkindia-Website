@@ -54,7 +54,7 @@
 				<div class="leadership-list">
 					<div class="row align-items-center">
 					@foreach ($teams as $team)
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="row align-items-center">
 								<div class="col-md-4">
 									{{-- <img id="img-team" src="{{ asset('uploads/team/' . $team->image) }}"

@@ -55,6 +55,15 @@
                                 @csrf()
                                 <div class="form-body">
                                     <h4 class="form-section"><i class="fa fa-eye"></i> About Page</h4>
+                                    <div class="form-group row">
+                                            <label class="col-md-3 label-control" for="userinput3"> Home Banner Image<span class="text-danger">*</span> :</label>
+                                            <div class="col-md-9">      
+                                                <input type="file" name="home_banner" class="form-control" accept="image/jpeg, image/png,image/jpg"/>
+                                                @if($aboutData->home_banner)
+                                                    <img src="{{ asset('uploads/about-us/'.$aboutData->home_banner) }}" id="imagePreview" class="organisation-logo" alt="Your image will appear here.">
+                                                @endif
+                                            </div>
+                                    </div>
                             
                                     <div class="row">
                                         <div class="col-md-12">

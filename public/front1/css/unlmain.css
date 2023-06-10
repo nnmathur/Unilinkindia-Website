@@ -97,7 +97,7 @@ a.learn-more{
 #header .logo img
 {
     position: relative;
-    top: -6px;
+    top: -10px;
 }
 #header .top-navigation
 {
@@ -1716,10 +1716,10 @@ section .container .about-leadership
 	padding:10px;
 	padding-top:0;
 }
-.leadership, .careers, .contact
+/*.leadership, .careers, .contact
 {
 	margin-top:100px;
-}
+}*/
 .company .mission-block{
 	width:100%; height:594px; left:0; right:0; margin-top:150px; margin-bottom:30px; position:relative;
 }
